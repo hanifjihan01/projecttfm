@@ -1,0 +1,34 @@
+{
+  "node": {
+    "a60896f3e9b422f47cf374d5ffbec12152e5b613": {
+      "workers": {
+        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/about/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Csections%5C%5Ccontact%5C%5Cv2%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/services/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/typeproductai/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/visitormanagementsystem/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!",
+        "app/iot/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/about/page": "action-browser",
+        "app/contact/page": "action-browser",
+        "app/services/page": "action-browser",
+        "app/typeproductai/page": "action-browser",
+        "app/visitormanagementsystem/page": "action-browser",
+        "app/iot/page": "action-browser"
+      }
+    },
+    "51355a54d537463c7b72b3aa699fe72a5e61e8d7": {
+      "workers": {
+        "app/contact/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Clayout%5C%5Cheader%5C%5Cdesktop%5C%5Cv2%5C%5Coff-canvas%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDesktop%5C%5Ctransforme%5C%5Ctechlab-next%5C%5Ctechlab-next%5C%5Csrc%5C%5Csections%5C%5Ccontact%5C%5Cv2%5C%5Cform%5C%5Cserver%5C%5Ccontact-us-form-submit.ts%22%2C%5B%22contactUsFormSubmit%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/contact/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "CZ7RU8sgHX/ZwgLhhBa8bBdY+5EuroG3PgUsswI5Vls="
+}

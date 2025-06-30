@@ -1,0 +1,12 @@
+{
+  "c": [
+    "app/page",
+    "app/layout",
+    "app/about/page",
+    "app/services/page",
+    "app/iot/page",
+    "webpack"
+  ],
+  "r": [],
+  "m": []
+}

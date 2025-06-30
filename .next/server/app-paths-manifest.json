@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/visitormanagementsystem/page": "app/visitormanagementsystem/page.js",
+  "/iot/page": "app/iot/page.js",
+  "/services/page": "app/services/page.js",
+  "/contact/page": "app/contact/page.js"
+}

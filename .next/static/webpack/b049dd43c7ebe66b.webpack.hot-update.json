@@ -1,0 +1,14 @@
+{
+  "c": [
+    "app/page",
+    "app/layout",
+    "app/about/page",
+    "app/contact/page",
+    "app/services/page",
+    "app/typeproductai/page",
+    "app/visitormanagementsystem/page",
+    "webpack"
+  ],
+  "r": [],
+  "m": []
+}
