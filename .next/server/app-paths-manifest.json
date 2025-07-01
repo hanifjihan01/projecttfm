@@ -1,7 +1,8 @@
 {
   "/page": "app/page.js",
-  "/visitormanagementsystem/page": "app/visitormanagementsystem/page.js",
-  "/iot/page": "app/iot/page.js",
+  "/contact/page": "app/contact/page.js",
   "/services/page": "app/services/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/iot/page": "app/iot/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

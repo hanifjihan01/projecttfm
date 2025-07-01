@@ -1,5 +1,0 @@
-{
-  "c": ["app/layout", "app/services/page", "app/iot/page", "webpack"],
-  "r": [],
-  "m": []
-}
