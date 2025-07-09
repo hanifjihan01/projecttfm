@@ -1,4 +1,4 @@
-// File: C:\Users\User\Desktop\transforme\techlab-next\techlab-next\app\iot\page.tsx
+// File: C:\Users\User\Desktop\transforme\transforme-next\transforme-next\app\iot\page.tsx
 import * as entry from '../../../../app/iot/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

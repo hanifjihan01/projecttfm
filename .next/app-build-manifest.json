@@ -41,6 +41,18 @@
       "static/chunks/main-app.js",
       "static/css/app/iot/page.css",
       "static/chunks/app/iot/page.js"
+    ],
+    "/smartsecurity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/smartsecurity/page.css",
+      "static/chunks/app/smartsecurity/page.js"
+    ],
+    "/listai/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/listai/page.css",
+      "static/chunks/app/listai/page.js"
     ]
   }
 }

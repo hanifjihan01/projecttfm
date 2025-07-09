@@ -7,20 +7,27 @@ import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/Ar
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
-  description: 'Techlab - IT Solutions and Services React Nextjs Template',
+  description: 'Transforme - IT Solutions and Services React Nextjs Template',
 };
 
 export default function Page() {
   return (
     <>
-      <div className="mb-16">
+      <div className="mb-16 ">
         <MainHeader version="1" />
       </div>
 
-      <HeroSections />
-      <ArtificialIntelligent />
+      <div className="relative z-10 md:mb-[-180px]">
+        <HeroSections />
+      </div>
 
-      <Footer />
+      <div className="relative z-20 ">
+        <ArtificialIntelligent />
+      </div>
+
+      <div className="mt-2">
+        <Footer />
+      </div>
     </>
   );
 }

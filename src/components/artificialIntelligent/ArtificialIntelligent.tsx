@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/src/utils/shadcn';
@@ -8,6 +9,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function ArtificialIntelligent() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const router = useRouter(); // ✅ gunakan useRouter
 
   const cards = [
     { label: 'Software Management and Platform' },
@@ -49,9 +51,12 @@ export function ArtificialIntelligent() {
                 <p className="text-base font-medium leading-tight sm:text-lg">
                   {card.label}
                 </p>
-                <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded bg-white px-2 py-1 shadow-md">
+                <button
+                  onClick={() => router.push('/listai')} // ✅ navigasi ke /listai
+                  className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded bg-white px-2 py-1 shadow-md transition hover:bg-gray-100"
+                >
                   <ChevronDown className="text-[#4AC4F3]" size={18} />
-                </div>
+                </button>
               </div>
             ))}
           </div>
