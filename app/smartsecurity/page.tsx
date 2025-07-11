@@ -1,6 +1,7 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
+import { LatestCollectionai2 } from '@/src/components/latestcollectionai/LatestCollectionai2';
 
 import { HeroSectionsss } from '@/src/components/heroSections/HeroSectionsss';
 import { ArtificialIntelligent2 } from '@/src/components/artificialintelligent2/Artificialintelligent2';
@@ -24,6 +25,8 @@ export default function Page() {
       <div className="relative z-20 ">
         <ArtificialIntelligent2 />
       </div>
+
+      <LatestCollectionai2 />
 
       <div className="mt-2">
         <Footer />

@@ -4,6 +4,7 @@ import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
 import { HeroSections } from '@/src/components/heroSections/HeroSections';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
+import { LatestCollectionai } from '@/src/components/latestcollectionai/LatestCollectionai';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -24,6 +25,8 @@ export default function Page() {
       <div className="relative z-20 ">
         <ArtificialIntelligent />
       </div>
+
+      <LatestCollectionai />
 
       <div className="mt-2">
         <Footer />

@@ -24,23 +24,23 @@
       "static/css/app/_not-found/page.css",
       "static/chunks/app/_not-found/page.js"
     ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contact/page.css",
-      "static/chunks/app/contact/page.js"
-    ],
     "/services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/services/page.css",
       "static/chunks/app/services/page.js"
     ],
-    "/iot/page": [
+    "/detailfacerecog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/iot/page.css",
-      "static/chunks/app/iot/page.js"
+      "static/css/app/detailfacerecog/page.css",
+      "static/chunks/app/detailfacerecog/page.js"
+    ],
+    "/detailegate/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/detailegate/page.css",
+      "static/chunks/app/detailegate/page.js"
     ],
     "/smartsecurity/page": [
       "static/chunks/webpack.js",
@@ -48,11 +48,29 @@
       "static/css/app/smartsecurity/page.css",
       "static/chunks/app/smartsecurity/page.js"
     ],
-    "/listai/page": [
+    "/detailcamera1/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/listai/page.css",
-      "static/chunks/app/listai/page.js"
+      "static/css/app/detailcamera1/page.css",
+      "static/chunks/app/detailcamera1/page.js"
+    ],
+    "/detailcamera2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/detailcamera2/page.css",
+      "static/chunks/app/detailcamera2/page.js"
+    ],
+    "/detailcamera3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/detailcamera3/page.css",
+      "static/chunks/app/detailcamera3/page.js"
+    ],
+    "/iot/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/iot/page.css",
+      "static/chunks/app/iot/page.js"
     ]
   }
 }

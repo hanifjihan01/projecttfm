@@ -1,7 +1,8 @@
 {
+  "/smartsecurity/page": "app/smartsecurity/page.js",
   "/page": "app/page.js",
   "/services/page": "app/services/page.js",
+  "/detailcamera3/page": "app/detailcamera3/page.js",
   "/iot/page": "app/iot/page.js",
-  "/smartsecurity/page": "app/smartsecurity/page.js",
-  "/listai/page": "app/listai/page.js"
+  "/_not-found/page": "app/_not-found/page.js"
 }
