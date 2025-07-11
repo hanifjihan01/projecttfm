@@ -1,0 +1,13 @@
+{
+  "c": [
+    "app/layout",
+    "app/detailfacerecog/page",
+    "app/detailegate/page",
+    "app/detailcamera1/page",
+    "app/detailcamera2/page",
+    "app/detailcamera3/page",
+    "webpack"
+  ],
+  "r": [],
+  "m": []
+}

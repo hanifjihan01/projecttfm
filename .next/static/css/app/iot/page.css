@@ -29,33 +29,33 @@
   max-width: 100%;
 }
 .container_container__az_fT.container_no-padding__9Wg80 {
-    --padding-x: 0px;
-  }
+  --padding-x: 0px;
+}
 @media (min-width: 640px) {
-.container_container__az_fT {
+  .container_container__az_fT {
     --container-width: var(--container-sm);
-}
   }
+}
 @media (min-width: 768px) {
-.container_container__az_fT {
+  .container_container__az_fT {
     --container-width: var(--container-md);
-}
   }
+}
 @media (min-width: 1024px) {
-.container_container__az_fT {
+  .container_container__az_fT {
     --container-width: var(--container-lg);
-}
   }
+}
 @media (min-width: 1280px) {
-.container_container__az_fT {
+  .container_container__az_fT {
     --container-width: var(--container-xl);
-}
   }
+}
 @media (min-width: 1400px) {
-.container_container__az_fT {
+  .container_container__az_fT {
     --container-width: var(--container-2xl);
-}
   }
+}
 
 /*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/layout/header/desktop/v2/header.module.css ***!
@@ -81,4 +81,3 @@
   transform: translateY(-110%);
   transition: all 0.5s ease-in-out;
 }
-
