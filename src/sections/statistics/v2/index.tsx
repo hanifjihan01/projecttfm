@@ -1,6 +1,5 @@
 'use client';
 
-import { Container } from '@/src/components/container';
 import { StatCard, StatCardProps } from 'src/components/cards/stat/v2';
 import { statisticsSectionData } from '@/data/statistics-section/v2';
 import { cn } from '@/src/utils/shadcn';
