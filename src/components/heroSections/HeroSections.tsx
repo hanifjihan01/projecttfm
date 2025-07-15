@@ -29,7 +29,7 @@ export function HeroSections() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-accent-900 pb-10 pt-12 text-center md:pb-20 md:pt-16">
+    <section className="relative overflow-hidden bg-accent-900 px-4 pb-14 pt-10 text-center md:px-8 md:pb-16 md:pt-20">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,14 +41,14 @@ export function HeroSections() {
         </h1>
 
         {/* Subjudul */}
-        <p className="mt-2 text-xs text-white md:text-base">
+        <p className="mt-3 text-xs text-white md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br className="hidden sm:block" />
           Nunc odio in et, lectus sit lorem id integer.
         </p>
 
         {/* Tombol tab */}
-        <div className="relative z-10 mt-4 flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-2">
+        <div className="relative z-10 mb-6 mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
           {tabs.map((tab) => (
             <button
               key={tab.value}
@@ -66,7 +66,7 @@ export function HeroSections() {
         </div>
 
         {/* Gambar (hanya tampil di desktop) */}
-        <div className="pointer-events-none relative z-0 mt-4 hidden justify-center md:mt-[-180px] md:flex">
+        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-80px] md:flex">
           <div className="relative aspect-[16/9] w-full max-w-7xl overflow-hidden rounded-2xl md:rounded-[1rem]">
             <Image
               src={images[activeTab]}

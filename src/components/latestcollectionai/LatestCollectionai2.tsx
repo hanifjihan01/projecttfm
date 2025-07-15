@@ -67,8 +67,6 @@ export function LatestCollectionai2() {
   const allProducts = Array.from({ length: 14 }, (_, i) => ({
     id: i,
     name: productNames[i],
-    price: 'Rp14.000.000',
-    discountPrice: i % 14 === 0 ? 'Rp14.090.000' : null,
     image: productImages[i],
     link: productLinks[i],
   }));
@@ -157,14 +155,6 @@ export function LatestCollectionai2() {
                       {product.name}
                     </p>
                   </Link>
-                  <div className="flex justify-between text-sm">
-                    <span>{product.price}</span>
-                    {product.discountPrice && (
-                      <span className="text-gray-400 line-through">
-                        {product.discountPrice}
-                      </span>
-                    )}
-                  </div>
                 </div>
               ))
             ) : (

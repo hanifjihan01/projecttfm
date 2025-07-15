@@ -1,4 +1,4 @@
-// StatisticsSection.tsx
+'use client';
 
 import { Container } from '@/src/components/container';
 import { StatCard, StatCardProps } from 'src/components/cards/stat/v2';
@@ -15,19 +15,21 @@ export function StatisticsSection({ className }: SectionProps) {
 
   return (
     <section className={cn(className)}>
-      <Container>
-        {statistics && statistics.length > 0 && (
-          <div className="rounded-xl p-6 shadow-lg dark:bg-white ">
-            <div className="flex flex-wrap justify-between gap-y-6">
-              {statistics.map((stat, index) => (
-                <div key={index} className="min-w-[200px] flex-1">
-                  <StatCard {...stat} />
-                </div>
-              ))}
+      <div className="flex w-full justify-center">
+        <div className="w-full max-w-[1480px] px-4 md:px-12 lg:px-24">
+          {statistics && statistics.length > 0 && (
+            <div className="rounded-xl bg-white p-6 shadow-lg dark:bg-white">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                {statistics.map((stat, index) => (
+                  <div key={index}>
+                    <StatCard {...stat} />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
-      </Container>
+          )}
+        </div>
+      </div>
     </section>
   );
 }

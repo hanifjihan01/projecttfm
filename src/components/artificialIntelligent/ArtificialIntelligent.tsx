@@ -9,7 +9,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export function ArtificialIntelligent() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const router = useRouter(); // ✅ gunakan useRouter
+  const router = useRouter();
 
   const cards = [
     { label: 'Software Management and Platform' },
@@ -19,7 +19,7 @@ export function ArtificialIntelligent() {
   const images = [
     '/assets/images/project/kt5.png',
     '/assets/images/project/alatai.png',
-    '/assets/images/project/plank.png',
+    '/assets/images/project/plank2.png',
   ];
 
   return (
@@ -52,7 +52,7 @@ export function ArtificialIntelligent() {
                   {card.label}
                 </p>
                 <button
-                  onClick={() => router.push('/listai')} // ✅ navigasi ke /listai
+                  onClick={() => router.push('/listai')}
                   className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded bg-white px-2 py-1 shadow-md transition hover:bg-gray-100"
                 >
                   <ChevronDown className="text-[#4AC4F3]" size={18} />
@@ -68,7 +68,7 @@ export function ArtificialIntelligent() {
           style={{ minHeight: 430 }}
         >
           {/* Image Carousel */}
-          <div className="flex w-full justify-center gap-3 overflow-hidden px-2 sm:px-0">
+          <div className="flex w-full justify-center overflow-x-auto px-2  sm:px-0 md:overflow-visible">
             {images.map((img, i) => (
               <motion.div
                 key={i}
@@ -79,7 +79,8 @@ export function ArtificialIntelligent() {
                 }}
                 transition={{ duration: 0.4 }}
                 className={cn(
-                  'overflow-hidden rounded-[20px]',
+                  'shrink-0 overflow-hidden rounded-[20px] transition-all',
+                  i !== 0 && '-ml-[40px]', // rapat antar gambar
                   i === activeIndex
                     ? 'h-[260px] w-[170px] sm:h-[340px] sm:w-[230px] md:h-[390px] md:w-[250px]'
                     : 'h-[240px] w-[150px] blur-sm sm:h-[310px] sm:w-[200px]'
@@ -90,7 +91,7 @@ export function ArtificialIntelligent() {
                   alt={`Image ${i + 1}`}
                   width={250}
                   height={390}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               </motion.div>
             ))}
@@ -108,7 +109,6 @@ export function ArtificialIntelligent() {
             >
               <ChevronLeft className="text-gray-600" size={20} />
             </button>
-
             <button
               onClick={() =>
                 setActiveIndex((prev) => (prev + 1) % images.length)

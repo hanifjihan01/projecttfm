@@ -13,7 +13,6 @@ export function LatestCollectioniot() {
 
   const itemsPerPage = 9;
 
-  // Daftar gambar produk
   const productImages = [
     '/assets/images/project/motorized.png',
     '/assets/images/project/wideangleconference.png',
@@ -52,7 +51,6 @@ export function LatestCollectioniot() {
     '/assets/images/project/smartgateway3.png',
   ];
 
-  // Nama-nama produk
   const productNames = [
     'Motorized Conference LCD',
     'Wide Angle Conference',
@@ -91,7 +89,6 @@ export function LatestCollectioniot() {
     'Smart Gateway gen 3 (906)',
   ];
 
-  // Link menuju detail masing-masing produk
   const productLinks = [
     '/detailmotorized',
     '/detailwide',
@@ -133,8 +130,6 @@ export function LatestCollectioniot() {
   const allProducts = Array.from({ length: 35 }, (_, i) => ({
     id: i,
     name: productNames[i],
-    price: 'Rp14.000.000',
-    discountPrice: i % 35 === 0 ? 'Rp14.090.000' : null,
     image: productImages[i],
     link: productLinks[i],
   }));
@@ -154,7 +149,6 @@ export function LatestCollectioniot() {
   return (
     <section className="bg-neutral-900 px-4 py-10 text-white md:px-10">
       <div className="mx-auto max-w-7xl space-y-6">
-        {/* Header */}
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-xl font-extrabold md:text-2xl">
@@ -166,7 +160,6 @@ export function LatestCollectioniot() {
             </p>
           </div>
 
-          {/* Search bar */}
           <div className="flex w-full items-center rounded-md border bg-white px-2 py-1 md:w-64">
             <input
               type="text"
@@ -182,7 +175,6 @@ export function LatestCollectioniot() {
           </div>
         </div>
 
-        {/* Filter dan tombol lihat semua */}
         <div className="flex items-center justify-between">
           <button className="flex items-center gap-1 rounded border bg-neutral-800 px-3 py-1 text-sm">
             Category
@@ -196,7 +188,6 @@ export function LatestCollectioniot() {
           </button>
         </div>
 
-        {/* Grid produk */}
         <AnimatePresence mode="wait">
           <motion.div
             key={`${page}-${showAll}-${searchTerm}`}
@@ -223,14 +214,6 @@ export function LatestCollectioniot() {
                       {product.name}
                     </p>
                   </Link>
-                  <div className="flex justify-between text-sm">
-                    <span>{product.price}</span>
-                    {product.discountPrice && (
-                      <span className="text-gray-400 line-through">
-                        {product.discountPrice}
-                      </span>
-                    )}
-                  </div>
                 </div>
               ))
             ) : (
@@ -241,10 +224,8 @@ export function LatestCollectioniot() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Pagination */}
         {!showAll && (
           <div className="flex flex-col items-center justify-between gap-4 pt-4 sm:flex-row">
-            {/* Tombol Prev/Next di kiri */}
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
@@ -263,8 +244,6 @@ export function LatestCollectioniot() {
                 Next →
               </button>
             </div>
-
-            {/* Input Page di kanan */}
             <div className="text-sm">
               Page{' '}
               <input

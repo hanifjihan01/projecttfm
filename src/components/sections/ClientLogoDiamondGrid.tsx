@@ -27,7 +27,9 @@ export function ClientLogoDiamondGrid() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="mb-10 text-center">
-        <h2 className="text-3xl font-bold">Our Clients</h2>
+        <h2 className="font-secondary text-lg font-semibold uppercase leading-tight text-black md:text-xl lg:text-2xl">
+          Our Clients
+        </h2>
         <p className="text-gray-600">
           We have been working with some fortune 500 clients
         </p>

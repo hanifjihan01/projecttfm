@@ -21,7 +21,6 @@ export function LatestCollectionai() {
     '/assets/images/project/xray.png',
   ];
 
-  // Nama-nama produk
   const productNames = [
     'Face Recognation Termal MVNT-86',
     'E-Gate single MVCM-2108-J Z',
@@ -30,7 +29,6 @@ export function LatestCollectionai() {
     'X Ray',
   ];
 
-  // Link menuju detail masing-masing produk
   const productLinks = [
     '/detailfacerecog',
     '/detailegate',
@@ -42,8 +40,6 @@ export function LatestCollectionai() {
   const allProducts = Array.from({ length: 5 }, (_, i) => ({
     id: i,
     name: productNames[i],
-    price: 'Rp14.000.000',
-    discountPrice: i % 5 === 0 ? 'Rp14.090.000' : null,
     image: productImages[i],
     link: productLinks[i],
   }));
@@ -132,14 +128,6 @@ export function LatestCollectionai() {
                       {product.name}
                     </p>
                   </Link>
-                  <div className="flex justify-between text-sm">
-                    <span>{product.price}</span>
-                    {product.discountPrice && (
-                      <span className="text-gray-400 line-through">
-                        {product.discountPrice}
-                      </span>
-                    )}
-                  </div>
                 </div>
               ))
             ) : (
@@ -153,7 +141,6 @@ export function LatestCollectionai() {
         {/* Pagination */}
         {!showAll && (
           <div className="flex flex-col items-center justify-between gap-4 pt-4 sm:flex-row">
-            {/* Tombol Prev/Next di kiri */}
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
@@ -172,8 +159,6 @@ export function LatestCollectionai() {
                 Next →
               </button>
             </div>
-
-            {/* Input Page di kanan */}
             <div className="text-sm">
               Page{' '}
               <input

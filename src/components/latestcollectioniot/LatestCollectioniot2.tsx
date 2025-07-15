@@ -13,7 +13,6 @@ export function LatestCollectioniot2() {
 
   const itemsPerPage = 9;
 
-  // Daftar gambar produk
   const productImages = [
     '/assets/images/project/smartlocker.png',
     '/assets/images/project/smartvending.png',
@@ -22,7 +21,6 @@ export function LatestCollectioniot2() {
     '/assets/images/project/lcdstanding.png',
   ];
 
-  // Nama-nama produk
   const productNames = [
     'Smart Locker',
     'Smart Vending Machine',
@@ -31,7 +29,6 @@ export function LatestCollectioniot2() {
     'LCD Standing (Digital Signage)',
   ];
 
-  // Link menuju detail masing-masing produk
   const productLinks = [
     '/detailsmartlocker',
     '/detailsmartvending',
@@ -43,8 +40,6 @@ export function LatestCollectioniot2() {
   const allProducts = Array.from({ length: 5 }, (_, i) => ({
     id: i,
     name: productNames[i],
-    price: 'Rp14.000.000',
-    discountPrice: i % 5 === 0 ? 'Rp14.090.000' : null,
     image: productImages[i],
     link: productLinks[i],
   }));
@@ -133,14 +128,6 @@ export function LatestCollectioniot2() {
                       {product.name}
                     </p>
                   </Link>
-                  <div className="flex justify-between text-sm">
-                    <span>{product.price}</span>
-                    {product.discountPrice && (
-                      <span className="text-gray-400 line-through">
-                        {product.discountPrice}
-                      </span>
-                    )}
-                  </div>
                 </div>
               ))
             ) : (
@@ -154,7 +141,6 @@ export function LatestCollectioniot2() {
         {/* Pagination */}
         {!showAll && (
           <div className="flex flex-col items-center justify-between gap-4 pt-4 sm:flex-row">
-            {/* Tombol Prev/Next di kiri */}
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
@@ -174,7 +160,6 @@ export function LatestCollectioniot2() {
               </button>
             </div>
 
-            {/* Input Page di kanan */}
             <div className="text-sm">
               Page{' '}
               <input

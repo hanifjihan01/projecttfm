@@ -25,11 +25,11 @@ export function SectionHeading({
 
   return (
     <div className={wrapperClasses}>
-      <h2 className="text-center font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+      <h2 className="text-center font-secondary text-lg font-semibold uppercase leading-tight text-white md:text-xl lg:text-2xl">
         {title}
       </h2>
       {subtitle && (
-        <span className="mt-[.625rem] block text-center font-secondary text-base font-bold uppercase leading-[1.5] tracking-widest text-gray-500 md:text-md">
+        <span className="mt-4 mt-[.625rem] block space-y-1 text-center font-secondary text-base font-bold uppercase leading-[1.5] tracking-widest text-accent-800 text-gray-500 dark:text-body md:text-md">
           {subtitle}
         </span>
       )}

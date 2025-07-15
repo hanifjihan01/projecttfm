@@ -51,14 +51,14 @@ export function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="mt-6"
+                className="mt-4 space-y-1 text-accent-800 dark:text-body"
               >
                 <h4 className="text-xl font-bold text-white">About Us</h4>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="mt-2"
+                  className="mt-4 space-y-1 text-accent-800 dark:text-body"
                 >
                   {vissionMission.vision}
                 </motion.p>
@@ -71,7 +71,7 @@ export function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.7, duration: 0.6 }}
-                className="mt-6"
+                className="mt-4 space-y-1 text-accent-800 dark:text-body"
               >
                 <h4 className="text-xl font-bold text-white">
                   Vision & Mission
@@ -80,7 +80,7 @@ export function AboutSection() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9, duration: 0.6 }}
-                  className="mt-2"
+                  className="mt-4 space-y-1 text-accent-800 dark:text-body"
                 >
                   {visionMission.vision}
                 </motion.p>

@@ -15,8 +15,6 @@ import 'swiper/css/pagination';
 
 SwiperCore.use([Navigation, Pagination]);
 
-// Tambahkan di atas atau bawah file index.tsx di hero/v1
-
 export interface HeroProps {
   items: {
     image: {
@@ -41,30 +39,26 @@ export function Hero() {
 
   return (
     <section className="relative z-0 bg-white text-white dark:bg-accent-900">
-      {/* Header */}
-      <div className="mx-auto w-full max-w-[1600px] px-4 pb-0 pt-4 text-center md:px-12 md:text-left lg:px-24">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="mb-2"
-        >
-          <h1 className="font-secondary text-sm font-bold uppercase text-black dark:text-white sm:text-base md:text-lg lg:text-xl">
-            Most Products
-          </h1>
-        </motion.div>
-      </div>
-
-      {/* Konten Card */}
       <div className="flex w-full justify-center bg-white dark:bg-accent-900">
-        <div className="w-full max-w-[1480px] px-4 py-10 md:px-12 lg:px-24">
-          <div className="space-y-6 rounded-2xl bg-white p-6 shadow-xl ring-1 ring-gray-200 dark:bg-accent-800 dark:ring-gray-700 md:p-10">
+        <div className="w-full max-w-[1480px] px-4 pt-6 md:px-12 lg:px-24">
+          {/* Judul Most Products */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="mb-4 font-secondary text-lg font-semibold uppercase leading-tight text-black dark:text-white md:text-xl lg:text-2xl"
+          >
+            Most Products
+          </motion.h1>
+
+          {/* Container Utama Card */}
+          <div className="space-y-6 rounded-2xl bg-white px-4 py-6 shadow-xl ring-1 ring-gray-200 dark:bg-accent-800 dark:ring-gray-700 sm:px-6 sm:py-8 md:p-10">
             {/* Judul Produk */}
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-              className="font-secondary text-xs font-semibold uppercase leading-tight text-black dark:text-white sm:text-sm md:text-base lg:text-lg"
+              className="font-secondary text-xs font-semibold uppercase leading-tight text-black dark:text-white sm:text-[13px] md:text-base lg:text-lg"
             >
               {activeItem?.title}
             </motion.h2>
@@ -91,7 +85,7 @@ export function Hero() {
               className="relative z-10"
             >
               {/* Tombol Navigasi Desktop */}
-              <div className="absolute -top-16 right-4 z-20 hidden gap-2 md:flex">
+              <div className="absolute right-4 top-[-56px] z-20 hidden gap-2 sm:top-[-64px] md:-top-16 md:flex">
                 <button
                   onClick={() => swiperRef.current?.slidePrev()}
                   disabled={isBeginning}
@@ -145,7 +139,7 @@ export function Hero() {
                   return (
                     <SwiperSlide
                       key={index}
-                      className="!w-[85%] sm:!w-[70%] md:!w-[50%] lg:!w-[33%]"
+                      className="xs:!w-[80%] !w-[90%] sm:!w-[65%] md:!w-[50%] lg:!w-[33%]"
                       onClick={() => {
                         if (!isActive) swiperRef.current?.slideToLoop(index);
                       }}
@@ -158,7 +152,7 @@ export function Hero() {
                           scale: isActive ? 1 : 0.95,
                         }}
                         transition={{ duration: 0.5, ease: 'easeOut' }}
-                        className={`relative flex h-[200px] items-center justify-center rounded-xl p-2 sm:h-[250px] md:h-[300px] ${
+                        className={`xs:h-[200px] relative flex h-[160px] items-center justify-center rounded-xl p-2 sm:h-[240px] md:h-[280px] lg:h-[300px] ${
                           !isActive ? 'blur-sm' : ''
                         }`}
                       >

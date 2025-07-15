@@ -43,7 +43,9 @@ export default function Page() {
       <ServiceSection className="!pb-0" {...serviceSectionData} />
       <AboutSection />
       <TestimonialSection />
-      <ClientLogoDiamondGrid />
+      <div className="mb-10">
+        <ClientLogoDiamondGrid />
+      </div>
 
       <Footer />
     </>
