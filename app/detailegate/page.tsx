@@ -5,7 +5,9 @@ import { Metadata } from 'next';
 
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
 
-import { EGateDetail } from '@/src/components/allproductsdetail/egatedetail';
+import { BannerEGate } from '@/src/components/banner/banneregate';
+import { EGateFeatures } from '@/src/components/features/EGateFeatures';
+import { EGateParameter } from '@/src/components/parameters/EGateParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,14 +17,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <EGateDetail />
+      <div className="">
+        <BannerEGate />
       </div>
-      <div className="mt-32">
+      <div className="">
+        <EGateFeatures />
+      </div>
+      <div className="">
+        <EGateParameter />
+      </div>
+
+      <div className="">
         <ArtificialIntelligent />
       </div>
 

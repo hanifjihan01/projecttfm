@@ -19,26 +19,7 @@ export const footerSectionData: FooterSectionProps = {
       },
     ],
   },
-  columnOne: {
-    title: 'About',
-    links: [
-      {
-        label: 'Introducing',
-        href: '/',
-        openNewTab: false,
-      },
-      {
-        label: 'Terms of Services',
-        href: '/',
-        openNewTab: false,
-      },
-      {
-        label: 'Privacy Policy',
-        href: '/',
-        openNewTab: false,
-      },
-    ],
-  },
+
   columnTwo: {
     title: 'Contact',
     location:

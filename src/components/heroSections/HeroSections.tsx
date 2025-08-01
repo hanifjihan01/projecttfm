@@ -12,8 +12,8 @@ const tabs = [
 ];
 
 const images: Record<string, string> = {
-  visitor: '/assets/images/hero/logosmartcitys.png',
-  security: '/assets/images/hero/logosmartcitys.png',
+  visitor: '/assets/images/hero/vms4.png',
+  security: '/assets/images/hero/vms4.png',
 };
 
 export function HeroSections() {
@@ -37,14 +37,16 @@ export function HeroSections() {
       >
         {/* Judul */}
         <h1 className="md:text-5xl text-2xl font-extrabold text-[#4AC4F6]">
-          My Smart Lifestyle
+          Visitor Management System
         </h1>
 
         {/* Subjudul */}
         <p className="mt-3 text-xs text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Efficiently monitor, record, and manage all your visitors in one
+          place.
           <br className="hidden sm:block" />
-          Nunc odio in et, lectus sit lorem id integer.
+          Helping organizations manage guest access with ease and
+          professionalism.
         </p>
 
         {/* Tombol tab */}
@@ -66,17 +68,20 @@ export function HeroSections() {
         </div>
 
         {/* Gambar (hanya tampil di desktop) */}
-        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-80px] md:flex">
-          <div className="relative aspect-[16/9] w-full max-w-7xl overflow-hidden rounded-2xl md:rounded-[1rem]">
-            <Image
-              src={images[activeTab]}
-              alt={
-                tabs.find((t) => t.value === activeTab)?.label || 'Hero Image'
-              }
-              fill
-              priority
-              className="object-contain"
-            />
+        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-180px] md:flex">
+          <div className="relative aspect-[16/9] w-full max-w-7xl">
+            {/* Ini wrapper penting agar rounded benar-benar berfungsi */}
+            <div className="relative h-full w-full overflow-hidden rounded-2xl">
+              <Image
+                src={images[activeTab]}
+                alt={
+                  tabs.find((t) => t.value === activeTab)?.label || 'Hero Image'
+                }
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </motion.div>

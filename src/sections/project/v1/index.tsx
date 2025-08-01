@@ -8,7 +8,10 @@ import { getStaggeredDelay } from '@/src/utils/set-staggered-delay';
 import { cn } from '@/src/utils/shadcn';
 
 export interface ProjectSectionProps {
-  sectionHeading: Pick<SectionHeadingWithoutStylingProps, 'subtitle' | 'title'>;
+  sectionHeading: Pick<
+    SectionHeadingWithoutStylingProps,
+    'subtitle' | 'title' | 'title2'
+  >;
   works: PortfolioCardProps[];
   isWave?: boolean;
 }

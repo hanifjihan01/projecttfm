@@ -12,8 +12,8 @@ const tabs = [
 ];
 
 const images: Record<string, string> = {
-  visitor: '/assets/images/hero/logosmartcitys.png',
-  security: '/assets/images/hero/logosmartcitys.png',
+  visitor: '/assets/images/hero/so1.png',
+  security: '/assets/images/hero/so1.png',
 };
 
 export function HeroSectionss() {
@@ -37,14 +37,15 @@ export function HeroSectionss() {
       >
         {/* Judul */}
         <h1 className="md:text-5xl text-2xl font-extrabold text-[#4AC4F6]">
-          My Smart Lifestyle
+          Smart Office
         </h1>
 
         {/* Subjudul */}
         <p className="mt-2 text-xs text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Smart Office solutions integrate advanced technologies to create an
+          intelligent and connected workspace that enhances
           <br className="hidden sm:block" />
-          Nunc odio in et, lectus sit lorem id integer.
+          productivity, collaboration, and operational efficiency.
         </p>
 
         {/* Tombol tab */}

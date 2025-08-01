@@ -1,9 +1,10 @@
 import { serviceSectionData } from '@/data/service-section/v1/home-page';
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-import { AboutSection } from '@/src/sections/about/v1';
+
 import { StatisticsSection } from '@/src/sections/statistics/v2';
 import { ClientLogoDiamondGrid } from '@/src/components/sections/ClientLogoDiamondGrid';
+import { AboutSection2 } from '@/src/sections/about/v1/AboutSection2';
 
 import { Hero } from '@/src/sections/hero/v1';
 
@@ -41,7 +42,8 @@ export default function Page() {
       </div>
 
       <ServiceSection className="!pb-0" {...serviceSectionData} />
-      <AboutSection />
+
+      <AboutSection2 />
       <TestimonialSection />
       <div className="mb-10">
         <ClientLogoDiamondGrid />

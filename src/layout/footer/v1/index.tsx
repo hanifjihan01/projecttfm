@@ -6,7 +6,6 @@ import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import { BrandLogo } from 'src/layout/brand-logo';
-import { FaChevronRight } from 'react-icons/fa6';
 import { NewsletterForm } from '@/data/layout/footer/v1/NewsletterForm';
 import { motion } from 'framer-motion';
 
@@ -26,10 +25,6 @@ export interface FooterSectionProps {
   about: {
     description: string;
     socialLinks: SocialLinkProps[];
-  };
-  columnOne: {
-    title: string;
-    links: LinkProps[];
   };
   columnTwo: {
     title: string;
@@ -62,8 +57,7 @@ const fadeInUp = {
 };
 
 export function Footer({ className }: SectionProps) {
-  const { about, columnOne, columnTwo, columnThree, footerBottom } =
-    footerSectionData;
+  const { about, columnTwo, columnThree, footerBottom } = footerSectionData;
 
   return (
     <footer
@@ -75,7 +69,7 @@ export function Footer({ className }: SectionProps) {
     >
       <div className="py-16 md:py-20">
         <Container>
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
             {/* About */}
             <motion.div
               initial="hidden"
@@ -106,46 +100,12 @@ export function Footer({ className }: SectionProps) {
               )}
             </motion.div>
 
-            {/* Column one */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              variants={fadeInUp}
-            >
-              <h3 className={titleClasses}>{columnOne.title}</h3>
-              {columnOne.links?.length > 0 && (
-                <nav aria-label="footer links navigation">
-                  <ul className="grid gap-2">
-                    {columnOne.links.map((link) => (
-                      <li
-                        key={link.label}
-                        className="flex items-center gap-2.5"
-                      >
-                        <span className="flex-none text-sm/[1] text-gray-900 dark:text-white">
-                          <FaChevronRight />
-                        </span>
-                        <CustomLink
-                          href={link.href}
-                          openNewTab={link.openNewTab}
-                          className={textColor}
-                        >
-                          {link.label}
-                        </CustomLink>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              )}
-            </motion.div>
-
             {/* Column Two */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               variants={fadeInUp}
             >
               <h3 className={titleClasses}>{columnTwo.title}</h3>
@@ -182,12 +142,12 @@ export function Footer({ className }: SectionProps) {
               </ul>
             </motion.div>
 
-            {/* Column three */}
+            {/* Column Three */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               variants={fadeInUp}
             >
               <h3 className={titleClasses}>{columnThree.title}</h3>

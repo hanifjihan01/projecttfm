@@ -12,8 +12,8 @@ const tabs = [
 ];
 
 const images: Record<string, string> = {
-  visitor: '/assets/images/hero/logosmartcitys.png',
-  security: '/assets/images/hero/logosmartcitys.png',
+  visitor: '/assets/images/hero/scf.png',
+  security: '/assets/images/hero/scf.png',
 };
 
 export function HeroSectionssss() {
@@ -37,14 +37,15 @@ export function HeroSectionssss() {
       >
         {/* Judul */}
         <h1 className="md:text-5xl text-2xl font-extrabold text-[#4AC4F6]">
-          My Smart Lifestyle
+          Smart Commercial Facility
         </h1>
 
         {/* Subjudul */}
         <p className="mt-2 text-xs text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Smart Commercial Facilities leverage advanced technologies such as
+          IoT, automation, and AI to create intelligent
           <br className="hidden sm:block" />
-          Nunc odio in et, lectus sit lorem id integer.
+          efficient, and responsive environments for businesses of all sizes.
         </p>
 
         {/* Tombol tab */}

@@ -8,8 +8,10 @@ import { cn } from '@/src/utils/shadcn';
  * @returns JSX.Element
  */
 export function SectionHeading({
-  title,
   subtitle,
+
+  title,
+  title2,
   description,
   alignment = 'start',
   hasBottomSpacing = false,
@@ -25,18 +27,23 @@ export function SectionHeading({
 
   return (
     <div className={wrapperClasses}>
-      <h2 className="text-center font-secondary text-lg font-semibold uppercase leading-tight text-white md:text-xl lg:text-2xl">
-        {title}
-      </h2>
       {subtitle && (
-        <span className="mt-4 mt-[.625rem] block space-y-1 text-center font-secondary text-base font-bold uppercase leading-[1.5] tracking-widest text-accent-800 text-gray-500 dark:text-body md:text-md">
+        <span
+          className={
+            'mb-[.625rem] block font-secondary text-base	 font-bold uppercase leading-[1.5] tracking-widest text-primary md:text-md'
+          }
+        >
           {subtitle}
         </span>
       )}
+      <h2 className="text-center font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+        {title}
+      </h2>
+      <h2 className=" font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+        {title2}
+      </h2>
       {description && (
-        <p className="mt-2 whitespace-pre-line text-accent-900 dark:text-white">
-          {description}
-        </p>
+        <p className={'mt-5 whitespace-pre-line'}>{description}</p>
       )}
     </div>
   );

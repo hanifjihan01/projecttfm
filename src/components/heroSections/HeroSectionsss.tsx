@@ -12,8 +12,8 @@ const tabs = [
 ];
 
 const images: Record<string, string> = {
-  visitor: '/assets/images/hero/logosmartcitys.png',
-  security: '/assets/images/hero/logosmartcitys.png',
+  visitor: '/assets/images/hero/ss.png',
+  security: '/assets/images/hero/ss.png',
 };
 
 export function HeroSectionsss() {
@@ -37,14 +37,14 @@ export function HeroSectionsss() {
       >
         {/* Judul */}
         <h1 className="md:text-5xl text-2xl font-extrabold text-[#4AC4F6]">
-          My Smart Lifestyle
+          Smart Security
         </h1>
 
         {/* Subjudul */}
-        <p className="mt-2 text-xs text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p className="mt-3 text-xs text-white md:text-base">
+          Advanced Smart Technology for Total Protection.
           <br className="hidden sm:block" />
-          Nunc odio in et, lectus sit lorem id integer.
+          Protecting What Matters Most with Intelligent Systems.
         </p>
 
         {/* Tombol tab */}
@@ -66,7 +66,7 @@ export function HeroSectionsss() {
         </div>
 
         {/* Gambar (hanya tampil di desktop) */}
-        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-80px] md:flex">
+        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-160px] md:flex">
           <div className="relative aspect-[16/9] w-full max-w-7xl overflow-hidden rounded-2xl md:rounded-[1rem]">
             <Image
               src={images[activeTab]}

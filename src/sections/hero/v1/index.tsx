@@ -46,10 +46,38 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="mb-4 font-secondary text-lg font-semibold uppercase leading-tight text-black dark:text-white md:text-xl lg:text-2xl"
+            className="mb-4 text-center font-secondary text-lg font-semibold uppercase leading-tight text-black dark:text-white md:text-xl lg:text-2xl"
           >
             Most Products
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+            className="mb-4 text-center font-semibold leading-tight"
+          >
+            <CustomLink
+              href="/services"
+              className="inline-flex items-center gap-1  text-sm font-medium  leading-tight text-primary md:text-base"
+            >
+              <span className=" ">View all Products</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="mt-[4px] h-4 w-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </CustomLink>
+          </motion.div>
 
           {/* Container Utama Card */}
           <div className="space-y-6 rounded-2xl bg-white px-4 py-6 shadow-xl ring-1 ring-gray-200 dark:bg-accent-800 dark:ring-gray-700 sm:px-6 sm:py-8 md:p-10">

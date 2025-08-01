@@ -37,6 +37,7 @@ export const serviceSectionData: ServiceSectionProps = {
   sectionHeading: {
     subtitle: 'our services',
     title: 'Elevating Businesses with IT Ingenuity',
+    title2: '',
   },
   services: [
     {

@@ -32,7 +32,7 @@ export function AboutSection() {
       id="about-us"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className="section-padding-primary overflow-hidden"
     >
@@ -41,8 +41,8 @@ export function AboutSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
             className="w-full max-w-7xl rounded-xl border border-t-0 border-gray-300 bg-accent-900 p-8 text-center text-accent-900 shadow-[4px_4px_12px_rgba(0,0,0,0.05),-4px_4px_12px_rgba(0,0,0,0.05)] dark:text-white"
           >
             {vissionMission?.vision && (
@@ -50,15 +50,16 @@ export function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.3, duration: 0.6 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
                 className="mt-4 space-y-1 text-accent-800 dark:text-body"
               >
                 <h4 className="text-xl font-bold text-white">About Us</h4>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  className="mt-4 space-y-1 text-accent-800 dark:text-body"
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.7, duration: 0.6 }}
+                  className="mt-4 text-accent-800 dark:text-body"
                 >
                   {vissionMission.vision}
                 </motion.p>
@@ -70,7 +71,7 @@ export function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.7, duration: 0.6 }}
+                transition={{ delay: 1.0, duration: 0.6 }}
                 className="mt-4 space-y-1 text-accent-800 dark:text-body"
               >
                 <h4 className="text-xl font-bold text-white">
@@ -79,8 +80,9 @@ export function AboutSection() {
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9, duration: 0.6 }}
-                  className="mt-4 space-y-1 text-accent-800 dark:text-body"
+                  viewport={{ once: true }}
+                  transition={{ delay: 1.2, duration: 0.6 }}
+                  className="mt-4 text-accent-800 dark:text-body"
                 >
                   {visionMission.vision}
                 </motion.p>

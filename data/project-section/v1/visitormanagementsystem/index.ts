@@ -4,6 +4,7 @@ export const visitormanagementsystemData: ProjectSectionProps = {
   sectionHeading: {
     subtitle: 'Type Of Product',
     title: 'Visitor Management System',
+    title2: '',
   },
   isWave: false,
   works: [

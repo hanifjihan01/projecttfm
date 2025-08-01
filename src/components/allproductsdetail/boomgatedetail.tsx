@@ -1,61 +1,153 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const tabs = ['Features', 'Specification', 'Accessories', 'Download'];
 
 export function BoomGateDetail() {
+  const [activeTab, setActiveTab] = useState('Features');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'Features':
+        return (
+          <motion.ul
+            key="features"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="list-inside list-disc space-y-3 pl-4 text-sm text-gray-300 sm:text-base"
+          >
+            <li>
+              <strong className="text-white">Dimensions :</strong> 150 × 80 ×
+              1224 mm (5.91 × 3.15 × 48.19 inch)
+            </li>
+            <li>
+              <strong className="text-white">Weight (with Package)</strong> 6 kg
+              (13.23 lb.)
+            </li>
+            <li>
+              <strong className="text-white">Dimensions (with Package)</strong>{' '}
+              258 × 248 × 1293 mm (10.16 × 9.6 × 50.91 inch)
+            </li>
+          </motion.ul>
+        );
+
+      case 'Specification':
+        return (
+          <motion.div
+            key="specs"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="text-sm text-gray-300 sm:text-base"
+          >
+            <p className="mb-2">
+              <strong className="text-white">Dimensions :</strong> 150 × 80 ×
+              1224 mm (5.91 × 3.15 × 48.19 inch)
+            </p>
+            <p className="mb-2">
+              <strong className="text-white">Weight (with Package)</strong> 6 kg
+              (13.23 lb.)
+            </p>
+            <p className="mb-2">
+              <strong className="text-white"> Dimensions (with Package)</strong>{' '}
+              258 × 248 × 1293 mm (10.16 × 9.6 × 50.91 inch)
+            </p>
+          </motion.div>
+        );
+
+      case 'Accessories':
+        return (
+          <motion.ul
+            key="accessories"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="list-inside list-disc space-y-2 pl-4 text-sm text-gray-300 sm:text-base"
+          >
+            <li>Dimensions</li>
+            <li>Weight (with Package)</li>
+            <li>Dimensions (with Package)</li>
+          </motion.ul>
+        );
+
+      case 'Download':
+        return (
+          <motion.div
+            key="download"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="space-y-3 text-sm text-gray-300 sm:text-base"
+          >
+            <a href="#" className="text-primary-400 hover:underline">
+              🧰 Information Item (PDF)
+            </a>
+          </motion.div>
+        );
+    }
+  };
+
   return (
-    <section className="relative bg-accent-900 px-4 py-10 text-white sm:px-6 sm:py-12 md:py-20">
+    <section className="relative bg-accent-900 px-4 py-12 text-white sm:px-6 md:px-12 lg:px-20">
       {/* Header Text */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mx-auto max-w-2xl md:max-w-6xl"
+        className="mx-auto max-w-4xl text-center"
       >
-        <h1 className="md:text-6xl text-3xl font-semibold leading-tight text-white sm:text-4xl">
-          Integrated Boom Gate <br />
-          With Smart AI Camera <br />
+        <h1 className="font-secondary text-lg font-semibold uppercase leading-tight md:text-xl lg:text-2xl">
+          Integrated Boom Gate With Smart
+          <br className="hidden sm:block" />
+          <span className="text-primary-400"> AI Camera</span>
         </h1>
-
-        <p className="mt-4 text-sm text-gray-300 sm:text-base">
-          In frispees, we spearhead new initiatives and provide mentorship to a
-          new startup, and help grow their opportunities in key local, regional
-          and global markets.
-        </p>
       </motion.div>
 
       {/* Image */}
-      <div className="relative mx-auto mt-8 w-full max-w-full sm:max-w-2xl md:mt-16 md:max-w-[1250px]">
-        <div className="overflow-hidden rounded-xl">
+      <div className="relative z-0 mx-auto  mb-10 w-full max-w-[450px]">
+        <div className="pointer-events-none overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/assets/images/hero/logosmartcitys.png"
-            alt="Hero Image"
-            width={1200}
-            height={600}
+            src="/assets/images/project/plank.png"
+            alt="Face Recognition Thermal MVNT-86"
+            width={450}
+            height={400}
             className="h-auto w-full object-cover"
             priority
           />
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="mx-auto mt-10 flex max-w-2xl flex-col gap-4 sm:gap-6 md:mt-12 md:max-w-6xl md:flex-row md:items-start md:gap-10">
-        <div className="min-w-[100px]">
-          <h3 className="mb-1 text-xs font-semibold text-white sm:text-sm">
-            About us
-          </h3>
-          <button className="flex items-center gap-2 text-xs text-white sm:text-sm">
-            Detail more
-            <span className="h-2 w-2 rounded-full bg-white"></span>
-          </button>
+      {/* Tabs Section */}
+      <div className="relative z-10 mx-auto -mt-24 max-w-7xl rounded-xl bg-white/5 p-6 shadow-lg md:p-10">
+        {/* Tab Buttons */}
+        <div className="mb-6 flex flex-wrap gap-4 border-b border-white/20">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 text-sm font-medium transition ${
+                activeTab === tab
+                  ? 'border-b-2 border-white text-white'
+                  : 'text-white/50 hover:text-white'
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
-        <p className="text-sm leading-relaxed text-gray-300 sm:text-base">
-          Produk ini hadir dengan desain elegan berwarna hitam dan putih,
-          terbuat dari material aluminium yang kokoh dan ringan. Menggunakan
-          sumber daya listrik melalui soket, produk ini memastikan performa
-          stabil dan penggunaan yang praktis.
-        </p>
+
+        {/* Tab Content (Fixed Height + Scroll) */}
+        <div className="h-[380px] overflow-y-auto">
+          <AnimatePresence mode="wait">{renderTabContent()}</AnimatePresence>
+        </div>
       </div>
     </section>
   );

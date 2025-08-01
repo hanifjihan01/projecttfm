@@ -4,6 +4,7 @@ export const projectSectionData: ProjectSectionProps = {
   sectionHeading: {
     subtitle: 'Our Projects',
     title: 'Empowering Your Digital Tomorrow',
+    title2: '',
   },
   link: {
     label: 'more projects',

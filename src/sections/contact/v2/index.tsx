@@ -18,11 +18,13 @@ export interface ContactSectionProps {
 
 export const contactSectionData: ContactSectionProps = {
   sectionHeading: {
-    title: 'Messege',
+    title: 'Message',
+    title2: '',
   },
   contactInfo: {
     sectionHeading: {
       title: ' ',
+      title2: '',
       description: ' ',
     },
     location: `Jl. Tanah Abang II No. 87C Cideng, Gambir Kota Administrasi Jakarta Pusat, DKI Jakarta, 10150 Indonesia`,

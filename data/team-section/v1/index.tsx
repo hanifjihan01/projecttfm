@@ -10,6 +10,7 @@ export const teamSectionData: TeamSectionProps = {
   sectionHeading: {
     subtitle: 'our active members',
     title: 'Transforming Challenges into Seamless Solutions',
+    title2: '',
   },
   cards: [
     {

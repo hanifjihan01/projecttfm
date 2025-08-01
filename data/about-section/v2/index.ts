@@ -4,6 +4,7 @@ export const aboutSectionData: AboutSectionProps = {
   sectionHeading: {
     subtitle: '',
     title: '',
+    title2: '',
     description: '',
   },
   aboutUsPoints: [],

@@ -38,8 +38,9 @@ export function Iot() {
           </h2>
 
           <p className="mt-2 text-sm text-white md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-            in et, lectus sit lorem id integer.
+            Empowering businesses and individuals with interconnected technology
+            that brings smarter decision-making, improved productivity, and
+            enhanced user experiences.
           </p>
 
           <div className="mt-6 flex flex-col items-center gap-y-6 md:flex-row md:flex-wrap md:items-start md:justify-start md:gap-4">

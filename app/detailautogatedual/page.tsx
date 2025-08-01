@@ -5,7 +5,9 @@ import { Metadata } from 'next';
 
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
 
-import { AutogateDualDetail } from '@/src/components/allproductsdetail/autogatedual';
+import { BannerDualGate } from '@/src/components/banner/bannerdualgate';
+import { AutoGateDualFeatures } from '@/src/components/features/AutoDualGateFeatures';
+import { AutoGateDualParameter } from '@/src/components/parameters/AutoGateDualParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,14 +17,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <AutogateDualDetail />
+      <div className="">
+        <BannerDualGate />
       </div>
-      <div className="mt-32">
+      <div className="">
+        <AutoGateDualFeatures />
+      </div>
+      <div className="">
+        <AutoGateDualParameter />
+      </div>
+
+      <div className="">
         <ArtificialIntelligent />
       </div>
 

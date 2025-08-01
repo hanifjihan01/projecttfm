@@ -3,8 +3,11 @@ import { ClassValue } from 'clsx';
 type Alignment = 'start' | 'center' | 'end';
 
 export interface SectionHeadingProps {
-  title: string;
   subtitle?: string;
+  title: string;
+  title2: string;
+  subtitle3?: string;
+
   description?: string;
   alignment?: Alignment;
   hasBottomSpacing?: boolean;

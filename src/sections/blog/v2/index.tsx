@@ -9,7 +9,10 @@ import { Button } from '@/src/components/button';
 import { CustomLink } from '@/src/components/custom-link';
 
 export interface BlogSectionProps {
-  sectionHeading: Pick<SectionHeadingWithoutStylingProps, 'subtitle' | 'title'>;
+  sectionHeading: Pick<
+    SectionHeadingWithoutStylingProps,
+    'subtitle' | 'title' | 'title2'
+  >;
   ctaButton: LinkProps;
   blogs: BlogProps[];
 }

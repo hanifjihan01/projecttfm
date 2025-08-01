@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerFaceRecog } from '@/src/components/banner/bannerfacerecog';
+import { FaceRecogFeatures } from '@/src/components/features/FaceRecogFeatures';
+import { FaceRecogParameters } from '@/src/components/parameters/FaceRecogParameter';
 
 import { Metadata } from 'next';
 
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-
-import { FaceRecogDetail } from '@/src/components/allproductsdetail/facerecogdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,14 +16,24 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <FaceRecogDetail />
+      <div className="">
+        <BannerFaceRecog />
       </div>
-      <div className="mt-32">
+
+      <div className="">
+        <FaceRecogFeatures />
+      </div>
+      <div className="">
+        <FaceRecogParameters />
+      </div>
+
+      {/* <div className="relative z-10 md:mb-[-180px]">
+        <FaceRecogDetail />
+      </div> */}
+      <div className="">
         <ArtificialIntelligent />
       </div>
 

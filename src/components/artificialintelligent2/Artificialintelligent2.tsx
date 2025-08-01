@@ -38,8 +38,9 @@ export function ArtificialIntelligent2() {
           </h2>
 
           <p className="mt-2 text-sm text-white md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-            in et, lectus sit lorem id integer.
+            Through powerful data processing and machine learning, AI systems
+            help organizations automate complex tasks, uncover insights, and
+            deliver smarter outcomes.
           </p>
 
           <div className="mt-6 flex flex-col items-center gap-y-6 md:flex-row md:flex-wrap md:items-start md:justify-start md:gap-4">

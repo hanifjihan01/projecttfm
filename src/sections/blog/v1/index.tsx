@@ -8,7 +8,10 @@ import { SectionProps } from '@/src/common-types';
 import { cn } from '@/src/utils/shadcn';
 
 export interface BlogSectionProps {
-  sectionHeading: Pick<SectionHeadingWithoutStylingProps, 'subtitle' | 'title'>;
+  sectionHeading: Pick<
+    SectionHeadingWithoutStylingProps,
+    'subtitle' | 'title' | 'title2'
+  >;
   blogs: BlogProps[];
 }
 

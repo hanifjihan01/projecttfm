@@ -25,7 +25,10 @@ interface ProjectFilterButtonProps {
   value: string;
 }
 export interface ProjectSectionProps {
-  sectionHeading: Pick<SectionHeadingWithoutStylingProps, 'subtitle' | 'title'>;
+  sectionHeading: Pick<
+    SectionHeadingWithoutStylingProps,
+    'subtitle' | 'title' | 'title2'
+  >;
   projectCategories: ProjectFilterButtonProps[];
   projects: PortfolioCardProps[];
   link: LinkProps;

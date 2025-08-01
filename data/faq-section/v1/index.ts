@@ -4,6 +4,7 @@ export const faqSectionData: FAQSectionProps = {
   sectionHeading: {
     subtitle: 'Our faq',
     title: 'Frequently asked question',
+    title2: '',
   },
   faqItems: [
     {

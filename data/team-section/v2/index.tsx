@@ -10,6 +10,7 @@ export const teamSectionData: TeamSectionProps = {
   sectionHeading: {
     subtitle: 'our active members',
     title: 'Unleash the Power of Technology',
+    title2: '',
   },
   description:
     'With a commitment to driving technological evolution, our IT solutions and services are the cornerstone of your digital progression. We transcend boundaries, enabling businesses to not only adapt but thrive in dynamic landscapes. ',

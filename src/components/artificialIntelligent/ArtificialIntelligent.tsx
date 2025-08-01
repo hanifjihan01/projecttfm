@@ -17,7 +17,7 @@ export function ArtificialIntelligent() {
   ];
 
   const images = [
-    '/assets/images/project/kt5.png',
+    '/assets/images/project/telephone3.png',
     '/assets/images/project/alatai.png',
     '/assets/images/project/plank2.png',
   ];
@@ -38,8 +38,9 @@ export function ArtificialIntelligent() {
           </h2>
 
           <p className="mt-2 text-sm text-white md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-            in et, lectus sit lorem id integer.
+            Through powerful data processing and machine learning, AI systems
+            help organizations automate complex tasks, uncover insights, and
+            deliver smarter outcomes.
           </p>
 
           <div className="mt-6 flex flex-col items-center gap-y-6 md:flex-row md:flex-wrap md:items-start md:justify-start md:gap-4">

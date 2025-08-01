@@ -4,6 +4,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
   sectionHeading: {
     subtitle: '',
     title: '',
+    title2: '',
   },
   // cards: [],
 };

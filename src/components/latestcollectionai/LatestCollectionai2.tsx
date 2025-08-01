@@ -33,7 +33,7 @@ export function LatestCollectionai2() {
   const productNames = [
     'Smart Camera AI 1S',
     'Smart AI Camera Alloy 1S Social Distance',
-    'Smart AI Camera 1Alloy',
+    'Smart AI Camera 1 Alloy',
     'Smart IP Camera JVS-N537-SDL',
     'Smart Helmet',
     'Clever Dog',
@@ -93,8 +93,9 @@ export function LatestCollectionai2() {
               Latest Collection
             </h2>
             <p className="mt-1 text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-              in et, lectus sit lorem id integer.
+              Discover our latest collection, where innovation meets style
+              featuring carefully curated designs crafted to elevate your
+              everyday experience.
             </p>
           </div>
 

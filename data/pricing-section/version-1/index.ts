@@ -4,6 +4,7 @@ export const pricingSectionData: PricingSectionProps = {
   sectionHeading: {
     subtitle: 'Pricing Action',
     title: 'Innovating for a better tomorrow',
+    title2: '',
   },
   cards: [
     {

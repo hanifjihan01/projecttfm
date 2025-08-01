@@ -25,7 +25,7 @@ export function ServiceSection({ services, className }: ServiceSectionProps) {
       <Container>
         {/* Title & Subtitle aligned to left */}
         <div
-          className="mb-16 max-w-2xl space-y-1 text-left"
+          className="mb-16 w-full space-y-1 text-left"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -33,7 +33,8 @@ export function ServiceSection({ services, className }: ServiceSectionProps) {
             Our Approach
           </h2>
           <p className="text-sm md:text-base lg:text-lg ">
-            Lorem ipsum dolor sit amet consectetur. Orci mattis.
+            We integrate smart systems and data-driven solutions to transform
+            your digital experience.
           </p>
         </div>
 

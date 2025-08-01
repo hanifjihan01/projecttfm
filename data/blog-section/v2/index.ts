@@ -4,6 +4,7 @@ export const blogSectionData: BlogSectionProps = {
   sectionHeading: {
     subtitle: 'our blogs',
     title: 'Where Innovation Meets IT Excellence',
+    title2: '',
   },
   ctaButton: {
     href: '/blog',

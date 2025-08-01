@@ -1,70 +1,204 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const tabs = ['Features', 'Specification', 'Accessories', 'Download'];
 
 export function EGateDetail() {
+  const [activeTab, setActiveTab] = useState('Features');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'Features':
+        return (
+          <motion.ul
+            key="features"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="list-inside list-disc space-y-3 pl-4 text-sm text-gray-300 sm:text-base"
+          >
+            <li>
+              <strong className="text-white">Swing Gate Indoor:</strong> gerbang
+              ayun khusus untuk penggunaan dalam ruangan.
+            </li>
+            <li>
+              <strong className="text-white">Adjustable Speed:</strong> Deteksi
+              Kecepatan buka/tutup hingga 515ms.
+            </li>
+            <li>
+              <strong className="text-white">Low Noise:</strong> Tingkat
+              kebisingan ≤ 40dB.
+            </li>
+            <li>
+              <strong className="text-white">Face Recognition:</strong> Kamera
+              binokular 2MP, akurasi 99%.
+            </li>
+            <li>
+              <strong className="text-white">Infrared Sensors:</strong> 48
+              sensor inframerah presisi tinggi.
+            </li>
+            <li>
+              <strong className="text-white">8-inch IPS Display:</strong> Layar
+              HD untuk tampilan data pengguna.
+            </li>
+            <li>
+              <strong className="text-white">Card & QR Access:</strong> Dukungan
+              ISO 14443-A/B & pembaca kode 1D/2D.
+            </li>
+            <li>
+              <strong className="text-white">Long Lifespan:</strong> MCBF hingga
+              220 juta siklus.
+            </li>
+          </motion.ul>
+        );
+
+      case 'Specification':
+        return (
+          <motion.div
+            key="specs"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="text-sm text-gray-300 sm:text-base"
+          >
+            <p>
+              <strong className="text-white">Power:</strong> AC 90–264V, 47–63Hz
+            </p>
+            <p>
+              <strong className="text-white">Torque:</strong> 57N·m
+            </p>
+            <p>
+              <strong className="text-white">Noise Level:</strong> ≤ 40dB
+            </p>
+            <p>
+              <strong className="text-white">Sensor:</strong> 48 infrared
+              sensors
+            </p>
+            <p>
+              <strong className="text-white">Camera:</strong> 2MP binocular face
+              recognition
+            </p>
+            <p>
+              <strong className="text-white">Recognition Rate:</strong> 99%
+              success, 0.01% error
+            </p>
+            <p>
+              <strong className="text-white">Display:</strong> 8-inch HD IPS
+            </p>
+            <p>
+              <strong className="text-white">Access:</strong> QR & RFID ISO
+              14443-A/B, 13.56MHz
+            </p>
+            <p>
+              <strong className="text-white">Communication:</strong> TCP/IP
+            </p>
+            <p>
+              <strong className="text-white">MCBF:</strong> 220 million cycles
+            </p>
+            <p>
+              <strong className="text-white">Channel Width:</strong> 600–1200mm
+            </p>
+            <p>
+              <strong className="text-white">Dimensions:</strong>{' '}
+              1500×150×1000mm
+            </p>
+          </motion.div>
+        );
+
+      case 'Accessories':
+        return (
+          <motion.ul
+            key="accessories"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="list-inside list-disc space-y-2 pl-4 text-sm text-gray-300 sm:text-base"
+          >
+            <li>Wall Mount Bracket</li>
+            <li>Power Adapter (12V/2A)</li>
+            <li>RJ45 LAN Cable</li>
+            <li>Relay Output Cable</li>
+            <li>User Manual & Quick Guide</li>
+          </motion.ul>
+        );
+
+      case 'Download':
+        return (
+          <motion.div
+            key="download"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="space-y-3 text-sm text-gray-300 sm:text-base"
+          >
+            <a href="#" className="text-primary-400 hover:underline">
+              🧰 Information Item (PDF)
+            </a>
+          </motion.div>
+        );
+    }
+  };
+
   return (
-    <section className="relative bg-accent-900 px-4 py-10 text-white sm:px-6 sm:py-12 md:py-20">
+    <section className="relative bg-accent-900 px-4 py-12 text-white sm:px-6 md:px-12 lg:px-20">
       {/* Header Text */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mx-auto max-w-2xl md:max-w-6xl"
+        className="mx-auto max-w-4xl text-center"
       >
-        <h1 className="md:text-6xl text-3xl font-semibold leading-tight text-white sm:text-4xl">
-          E-Gate single <br />
-          MVCM-2108-J <br />Z
+        <h1 className="font-secondary text-lg font-semibold uppercase leading-tight md:text-xl lg:text-2xl">
+          E-Gate Single MVCM-2108-JZ
+          <br className="hidden sm:block" />
+          <span className="text-primary-400"></span>
         </h1>
-
-        <p className="mt-4 text-sm text-gray-300 sm:text-base">
-          In frispees, we spearhead new initiatives and provide mentorship to a
-          new startup, and help grow their opportunities in key local, regional
-          and global markets.
-        </p>
       </motion.div>
 
       {/* Image */}
-      <div className="relative mx-auto mt-8 w-full max-w-full sm:max-w-2xl md:mt-16 md:max-w-[1250px]">
-        <div className="overflow-hidden rounded-xl">
+      <div className="relative z-0 mx-auto mt-10 w-full max-w-[450px]">
+        <div className="pointer-events-none overflow-hidden rounded-2xl shadow-lg">
           <Image
-            src="/assets/images/hero/logosmartcitys.png"
-            alt="Hero Image"
-            width={1200}
-            height={600}
+            src="/assets/images/project/egate.png"
+            alt="Face Recognition Thermal MVNT-86"
+            width={450}
+            height={400}
             className="h-auto w-full object-cover"
             priority
           />
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="mx-auto mt-10 flex max-w-2xl flex-col gap-4 sm:gap-6 md:mt-12 md:max-w-6xl md:flex-row md:items-start md:gap-10">
-        <div className="min-w-[100px]">
-          <h3 className="mb-1 text-xs font-semibold text-white sm:text-sm">
-            About us
-          </h3>
-          <button className="flex items-center gap-2 text-xs text-white sm:text-sm">
-            Detail more
-            <span className="h-2 w-2 rounded-full bg-white"></span>
-          </button>
+      {/* Tabs Section */}
+      <div className="relative z-10 mx-auto -mt-24 max-w-7xl rounded-xl bg-white/5 p-6 shadow-lg md:p-10">
+        {/* Tab Buttons */}
+        <div className="mb-6 flex flex-wrap gap-4 border-b border-white/20">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 text-sm font-medium transition ${
+                activeTab === tab
+                  ? 'border-b-2 border-white text-white'
+                  : 'text-white/50 hover:text-white'
+              }`}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
-        <p className="text-sm leading-relaxed text-gray-300 sm:text-base">
-          Perangkat ini merupakan sistem gerbang ayun (swing gate) yang
-          dirancang untuk penggunaan dalam ruangan. Ditenagai oleh tegangan AC
-          90–264V dengan frekuensi 47–63Hz, sistem ini memiliki kecepatan
-          buka/tutup yang dapat disesuaikan (hingga 515), tingkat kebisingan
-          ≤40dB, dan torsi terukur sebesar 57N·m. Dilengkapi dengan 48 sensor
-          inframerah dan layar 8 inci HD IPS, perangkat ini menggunakan kamera
-          pengenal wajah binokular 2MP dengan tingkat kesalahan pengenalan hanya
-          0,01% dan tingkat keberhasilan 99%. Komunikasi dilakukan melalui
-          antarmuka TCP/IP. Untuk akses, tersedia fitur pemindaian kode 1D/2D
-          dengan akurasi 23mil serta pembaca kartu yang sesuai dengan standar
-          ISO 14443-A/B (frekuensi 13,56 MHz). Perangkat memiliki umur operasi
-          (MCBF) hingga 220 juta siklus, lebar saluran 600–1200mm, dan dimensi
-          keseluruhan 1500×150×1000mm.
-        </p>
+
+        {/* Tab Content (Fixed Height + Scroll) */}
+        <div className="h-[380px] overflow-y-auto">
+          <AnimatePresence mode="wait">{renderTabContent()}</AnimatePresence>
+        </div>
       </div>
     </section>
   );

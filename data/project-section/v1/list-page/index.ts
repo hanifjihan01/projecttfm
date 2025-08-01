@@ -4,6 +4,7 @@ export const projectSectionData: ProjectSectionProps = {
   sectionHeading: {
     subtitle: 'latest produts',
     title: 'Where Innovation Meets IT Excellence',
+    title2: '',
   },
   isWave: false,
   works: [

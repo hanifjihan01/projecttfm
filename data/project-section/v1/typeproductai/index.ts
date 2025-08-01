@@ -4,6 +4,7 @@ export const typeProductAiData: ProjectSectionProps = {
   sectionHeading: {
     subtitle: 'latest produts',
     title: 'Type Of Product',
+    title2: '',
   },
   isWave: false,
   works: [

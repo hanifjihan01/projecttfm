@@ -4,6 +4,7 @@ export const blogSectionData: BlogSectionProps = {
   sectionHeading: {
     subtitle: 'our blogs',
     title: 'Transforming Challenges into Seamless Solutions',
+    title2: '',
   },
   blogs: [
     {
