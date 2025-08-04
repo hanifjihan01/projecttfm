@@ -1,11 +1,13 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BoomGateFeatures } from '@/src/components/features/BoomGateFeatures';
+import { BoomGateParameter } from '@/src/components/parameters/BoomGateParameter';
 
 import { Metadata } from 'next';
 
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
+import { BannerIntegratedBoom } from '@/src/components/banner/bannerintegratedboom';
 
-import { BoomGateDetail } from '@/src/components/allproductsdetail/boomgatedetail';
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
   description: 'Transforme - IT Solutions and Services React Nextjs Template',
@@ -17,15 +19,21 @@ export default function Page() {
       <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <BoomGateDetail />
+      <div className="">
+        <BannerIntegratedBoom />
       </div>
-      <div className="mt-32">
+      <div className="">
+        <BoomGateFeatures />
+      </div>
+      <div className="">
+        <BoomGateParameter />
+      </div>
+
+      <div className="">
         <ArtificialIntelligent />
       </div>
 
-      <div className="mt-32">
+      <div className="">
         <Footer />
       </div>
     </>

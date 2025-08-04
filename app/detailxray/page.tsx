@@ -5,7 +5,9 @@ import { Metadata } from 'next';
 
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
 
-import { XRayDetail } from '@/src/components/allproductsdetail/xraydetail';
+import { BannerXRay } from '@/src/components/banner/bannerxray';
+import { XRayFeatures } from '@/src/components/features/XRayFeatures';
+import { XRayParameter } from '@/src/components/parameters/XRayParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,18 +17,24 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <XRayDetail />
+      <div className="">
+        <BannerXRay />
       </div>
-      <div className="mt-32">
+      <div className="">
+        <XRayFeatures />
+      </div>
+      <div className="">
+        <XRayParameter />
+      </div>
+
+      <div className="">
         <ArtificialIntelligent />
       </div>
 
-      <div className="mt-32">
+      <div className="">
         <Footer />
       </div>
     </>

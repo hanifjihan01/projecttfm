@@ -34,7 +34,7 @@ export const heroData: HeroProps = {
       title: 'X-Ray',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailxray',
       },
     },
     {
@@ -56,7 +56,7 @@ export const heroData: HeroProps = {
       title: 'Face Recognation Termal MVNT-86',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailfacerecog',
       },
     },
     {
@@ -67,7 +67,7 @@ export const heroData: HeroProps = {
       title: 'Integrated Boom Gate With Smart AI Camera',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/boomgate',
       },
     },
     {
@@ -78,7 +78,7 @@ export const heroData: HeroProps = {
       title: 'Autogate Dual',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailautogatedual',
       },
     },
     {

@@ -27,6 +27,16 @@ export function LatestCollectionai() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (window.location.hash === '#latest-products') {
+      setShowAll(true);
+      setTimeout(() => {
+        const section = document.getElementById('latest-products');
+        section?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, []);
+
   const itemsPerPage = 9;
 
   const productData: Record<
@@ -79,7 +89,10 @@ export function LatestCollectionai() {
     : filteredProductsAll.slice(startIndex, endIndex);
 
   return (
-    <section className="bg-gradient-to-b from-neutral-900 to-black px-4 py-10 text-white md:px-10">
+    <section
+      id="latest-products"
+      className="bg-gradient-to-b from-neutral-900 to-black px-4 py-10 text-white md:px-10"
+    >
       <div className="mx-auto max-w-7xl space-y-8">
         {/* Header and Search */}
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -104,7 +117,7 @@ export function LatestCollectionai() {
         {/* Layout */}
         <div className="flex flex-col gap-8 md:flex-row">
           {/* Sidebar */}
-          <aside className="w-full rounded-xl border border-white/20 bg-white/5 p-4 backdrop-blur-sm md:w-64">
+          <aside className="h-fit w-full rounded-xl border border-white/20 bg-white/5 p-4 backdrop-blur-sm md:w-64">
             <h3 className="mb-4 text-lg font-semibold">Kategori Produk</h3>
             <div className="space-y-2">
               {Object.keys(productData).map((category) => {

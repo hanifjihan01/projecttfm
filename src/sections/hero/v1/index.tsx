@@ -58,7 +58,7 @@ export function Hero() {
             className="mb-4 text-center font-semibold leading-tight"
           >
             <CustomLink
-              href="/services"
+              href="/services#latest-products"
               className="inline-flex items-center gap-1  text-sm font-medium  leading-tight text-primary md:text-base"
             >
               <span className=" ">View all Products</span>
