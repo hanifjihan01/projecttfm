@@ -2,10 +2,11 @@ import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 
 import { Metadata } from 'next';
+import { BannerLcdStanding } from '@/src/components/banner/bannerlcdstanding';
 
 import { Iot2 } from '@/src/components/iot2/iot2';
-
-import { LcdStandingDetail } from '@/src/components/allproductsiot/lcdstandingdetail';
+import { LcdStandingFeatures } from '@/src/components/features/LcdStandingFeatures';
+import { LcdStandingParameter } from '@/src/components/parameters/LcdStandingParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <LcdStandingDetail />
+      <div className="">
+        <BannerLcdStanding />
       </div>
+      <div className="">
+        <LcdStandingFeatures />
+      </div>
+      <div className="">
+        <LcdStandingParameter />
+      </div>
+
       <div className="mt-32">
         <Iot2 />
       </div>

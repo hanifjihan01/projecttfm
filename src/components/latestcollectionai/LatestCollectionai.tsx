@@ -155,7 +155,7 @@ export function LatestCollectionai() {
           <div className="flex-1 space-y-6">
             {/* Dropdown & Toggle All */}
             <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
-              <div className="relative" ref={dropdownRef}>
+              <div className="relative mx-auto" ref={dropdownRef}>
                 <button
                   onClick={() => setShowDropdown((prev) => !prev)}
                   className="flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-4 py-2 text-sm hover:bg-white/20"

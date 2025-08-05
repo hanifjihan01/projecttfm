@@ -4,8 +4,9 @@ import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
 
 import { Iot2 } from '@/src/components/iot2/iot2';
-
-import { LayarInteractiveLcdDetail } from '@/src/components/allproductsiot/layarinteractivelcd';
+import { BannerInteractiveLcd } from '@/src/components/banner/bannerinteractivelcd';
+import { InteractiveFeatures } from '@/src/components/features/InteractiveFeatures';
+import { InteractiveParameter } from '@/src/components/parameters/InteractiveParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <LayarInteractiveLcdDetail />
+      <div className="">
+        <BannerInteractiveLcd />
       </div>
+
+      <div className="">
+        <InteractiveFeatures />
+      </div>
+      <div className="">
+        <InteractiveParameter />
+      </div>
+
       <div className="mt-32">
         <Iot2 />
       </div>
