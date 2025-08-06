@@ -6,6 +6,7 @@ import { Iot2 } from '@/src/components/iot2/iot2';
 
 import { LatestCollectioniot2 } from '@/src/components/latestcollectioniot/LatestCollectioniot2';
 import { HeroSectionssss } from '@/src/components/heroSections/HeroSectionssss';
+import { BannerIot2 } from '@/src/components/banner/banneriot1';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -19,8 +20,12 @@ export default function Page() {
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
+      <div className="relative z-10 md:mb-[0px]">
         <HeroSectionssss />
+      </div>
+
+      <div className="">
+        <BannerIot2 />
       </div>
 
       <div className="relative z-20 ">

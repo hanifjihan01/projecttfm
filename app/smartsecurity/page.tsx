@@ -2,6 +2,7 @@ import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
 import { LatestCollectionai2 } from '@/src/components/latestcollectionai/LatestCollectionai2';
+import { BannerAi2 } from '@/src/components/banner/bannerai2';
 
 import { HeroSectionsss } from '@/src/components/heroSections/HeroSectionsss';
 import { ArtificialIntelligent2 } from '@/src/components/artificialintelligent2/Artificialintelligent2';
@@ -18,8 +19,11 @@ export default function Page() {
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
+      <div className="relative z-10 md:mb-[0px]">
         <HeroSectionsss />
+      </div>
+      <div className="">
+        <BannerAi2 />
       </div>
 
       <div className="relative z-20 ">

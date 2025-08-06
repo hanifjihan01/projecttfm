@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 export function MKiosFeatures() {
   const features = [
-    'Mesin front desk pintar dengan layar sentuh 27 inci dan rasio aspek 16:9.',
-    'Dirancang untuk check-in mandiri di hotel dengan integrasi ke sistem keamanan, manajemen pengunjung, dan HRD.',
-    'Dilengkapi fitur pemindaian kode dan wajah yang cepat untuk kemudahan operasional.',
-    'Bisa digunakan sebagai kontrol akses ke lantai atau ruangan tertentu.',
-    'Beroperasi 24 jam, mendukung check-in mandiri untuk tamu individu, rombongan, pemesan online, hingga tanpa KTP.',
+    'Smart front desk machine with 27 inch touch screen and 16:9 aspect ratio.',
+    'Designed for self-check-in at hotels with integration to security, visitor management and HR systems.',
+    '82 / 5,000Equipped with fast code and face scanning features for easy operation.',
+    'Can be used as access control to certain floors or rooms.',
+    'Operating 24 hours, it supports self-check-in for individual guests, groups, online bookers, and even without an Identity Card.',
   ];
 
   return (

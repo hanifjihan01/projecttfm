@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export function AutoGateDualFeatures() {
   const features = [
-    'Pemeriksaan keamanan dalam ruangan',
-    'Deteksi logam & identitas (ICAO9303), barcode 1D/2D, wajah & tubuh (opsional)',
-    'Alarm dan pembukaan pintu otomatis saat kondisi darurat',
-    'Sesuai GB15208 dengan dosis sinar-X mikro',
+    'Indoor security check',
+    'Metal and identity detection (ICAO 9303), 1D/2D barcode, face & body (optional)',
+    'Alarm and automatic door opening in emergency situations',
+    'Compliant with GB15208 with micro X-ray dose',
   ];
 
   const firstColumn = features.slice(0, 6);

@@ -2,48 +2,61 @@
 
 import { motion } from 'framer-motion';
 
-export function XRayParameter() {
+export function MeetingTvParameter() {
   const parameters = [
     {
-      label: 'Speed & Load Capacity',
-      value: 'Conveyor 0.22 m/s, supports up to 170 kg',
+      label: 'Functionality',
+      value:
+        'A multifunctional presentation solution equipped with advanced touchscreen technology.',
+    },
+    {
+      label: 'Display Specification',
+      value:
+        'DLED panel (1428 x 804 mm), 4K UHD (3840 x 2160), 16:9 ratio, 350cd/㎡±30 brightness, 5000:1 contrast ratio.',
     },
     {
       label: 'Viewing Angle',
-      value: 'Bottom & side view, penetrates 40 mm steel plate',
+      value: '178° horizontal and vertical for maximum visibility.',
     },
     {
-      label: 'Resolution',
-      value: 'Line: Φ 0.0787 mm, Penetration: Φ 0.202 mm',
-    },
-    { label: 'Spatial Resolution', value: 'Horizontal & vertical: Φ 1.0 mm' },
-    {
-      label: 'Channel Size & Dose',
-      value: '650x500 mm, < 4 μGy per inspection',
+      label: 'Color Depth',
+      value: '10-bit, 16.7 million colors for vivid and sharp images.',
     },
     {
-      label: 'Radiation Emission',
-      value: '< 0.2 μSv/hour, meets national/international standards',
+      label: 'System Performance',
+      value:
+        'H560 chipset, quad-core ARM A55 1.5GHz, 2/3GB RAM, 16/32GB ROM, Android 9.0.',
     },
     {
-      label: 'Radiation Protection',
-      value: 'Double lead curtain, 2-5 mm lead plate',
-    },
-    { label: 'X-Ray', value: 'Digital, 80-160 kV, 0.3-1.2 mA' },
-    { label: 'Cooling System', value: 'Closed oil system, 100% duty cycle' },
-    { label: 'Safety Feature', value: 'Finger clamp guard in channel area' },
-    { label: 'Indicator', value: 'Tower lights at 4 corners' },
-    {
-      label: 'User Comfort',
-      value: 'Professional keyboard & ergonomic desk',
+      label: 'Touch Technology',
+      value:
+        'Infrared 20-point touch recognition for smooth, responsive interaction.',
     },
     {
-      label: 'Conveyor Material',
-      value: '3 mm diamond pattern, anti-static & scratch-resistant',
+      label: 'Brightness Adjustment',
+      value: 'Ambient light sensor with 8-level linear dimming.',
     },
     {
-      label: 'Frame Structure',
-      value: 'Stainless steel GB 304 & cold-rolled plate',
+      label: 'I/O Interface',
+      value: 'USB 2.0 & 3.0, Audio in/out, HDMI, VGA, RJ45, RS232.',
+    },
+    {
+      label: 'Wi-Fi Connectivity',
+      value:
+        'External support with 4 antenna ports, including dual 5G hotspots.',
+    },
+    {
+      label: 'Audio System',
+      value: 'Built-in CLASS-D stereo amplifier, 2 × 10W output.',
+    },
+    {
+      label: 'Power Consumption',
+      value: 'Approx. 240W (without computer), AC 180–240V 50/60Hz input.',
+    },
+    {
+      label: 'Application',
+      value:
+        'Ideal for meeting rooms, classrooms, and large interactive presentation environments.',
     },
   ];
 

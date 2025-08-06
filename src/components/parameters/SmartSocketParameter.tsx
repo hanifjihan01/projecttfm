@@ -2,29 +2,38 @@
 
 import { motion } from 'framer-motion';
 
-export function InteractiveParameter() {
+export function SmartSocketParameter() {
   const parameters = [
     {
-      label: '24 Inch Touchscreen',
-      value: '24-inch touchscreen for wide and comfortable viewing.',
-    },
-    {
-      label: 'Android Operating System',
+      label: 'Functionality',
       value:
-        'Runs the Android operating system for high flexibility and compatibility.',
+        'Designed with a switch, suitable for residential or general-purpose use.',
     },
     {
-      label: 'Interactive Experience',
-      value: 'Providing a modern and responsive interactive experience.',
+      label: 'Safety',
+      value: 'Single-hole socket with grounding standard for safety.',
     },
     {
-      label: 'Multifunctional',
+      label: 'Material',
       value:
-        'Suitable for various needs such as self check-in or interactive information.',
+        'Made from flame-retardant ABS material for durability and fire resistance.',
     },
     {
-      label: 'Elegant Design',
-      value: 'Elegant design that supports the aesthetics of the room.',
+      label: 'Electrical Specifications',
+      value:
+        'Supports a maximum current of 10A with an operating voltage range of AC85~265V at 50/60Hz.',
+    },
+    {
+      label: 'Load Capacity',
+      value: 'Maximum load capacity of up to 2000W.',
+    },
+    {
+      label: 'Dimensions',
+      value: 'Compact design with dimensions of 86mm x 86mm x 35mm.',
+    },
+    {
+      label: 'IP Rating',
+      value: 'No IP rating certification for water or dust resistance.',
     },
   ];
 
@@ -45,11 +54,11 @@ export function InteractiveParameter() {
           {parameters.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col gap-1 px-4 py-4 text-sm transition-colors duration-200 sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
+              className={`flex flex-col gap-1 px-4 py-4 text-sm sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
                 index % 2 === 0
                   ? 'bg-white/10 hover:bg-white/10'
                   : 'bg-white/5 hover:bg-white/20'
-              }`}
+              } transition-colors duration-200`}
             >
               <div className="w-full font-medium text-gray-300 sm:w-1/3 md:w-1/4">
                 {item.label}

@@ -4,23 +4,23 @@ import { motion } from 'framer-motion';
 
 export function AutoGateDualParameter() {
   const parameters = [
-    { label: 'Ukuran', value: '4700 × 3840 × 2300 mm' },
+    { label: 'Dimensions', value: '4700 x 3840 x 2300 mm' },
     {
       label: 'Material',
-      value: 'Stainless steel 304 & pelat baja canai dingin',
+      value: 'Stainless steel 304 & cold-rolled steel plate',
     },
-    { label: 'Kapasitas Deteksi', value: 'Maksimum 160 kg' },
-    { label: 'Saluran Pemeriksaan', value: '650 × 500 mm' },
-    { label: 'Konsumsi Daya', value: '4000W' },
-    { label: 'Tegangan Input', value: 'AC 220V' },
+    { label: 'Detection Capacity', value: 'Maximum 160 kg' },
+    { label: 'Inspection Channel', value: '650 x 500 mm' },
+    { label: 'Power Consumption', value: '4000W' },
+    { label: 'Input Voltage', value: 'AC 220V' },
     {
-      label: 'Sistem Pengukuran',
-      value: 'Suhu & kelembapan dengan akurasi tinggi',
+      label: 'Measurement System',
+      value: 'Temperature & humidity with high accuracy',
     },
-    { label: 'Prosesor', value: 'Intel Core i5' },
+    { label: 'Processor', value: 'Intel Core i5' },
     { label: 'RAM', value: '16GB DDR4' },
-    { label: 'Penyimpanan', value: 'SSD 256GB' },
-    { label: 'Port', value: 'USB, PCI, dan jaringan' },
+    { label: 'Storage', value: '256GB SSD' },
+    { label: 'Ports', value: 'USB, PCI, and network' },
   ];
 
   return (

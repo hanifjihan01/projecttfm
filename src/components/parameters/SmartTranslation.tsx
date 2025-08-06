@@ -2,29 +2,32 @@
 
 import { motion } from 'framer-motion';
 
-export function InteractiveParameter() {
+export function SmartTranslationParameter() {
   const parameters = [
     {
-      label: '24 Inch Touchscreen',
-      value: '24-inch touchscreen for wide and comfortable viewing.',
-    },
-    {
-      label: 'Android Operating System',
+      label: 'Language Support',
       value:
-        'Runs the Android operating system for high flexibility and compatibility.',
+        'Supports real-time translation in over 100 languages with offline mode for 12 major languages.',
     },
     {
-      label: 'Interactive Experience',
-      value: 'Providing a modern and responsive interactive experience.',
-    },
-    {
-      label: 'Multifunctional',
+      label: 'AI Context Recognition',
       value:
-        'Suitable for various needs such as self check-in or interactive information.',
+        'AI-powered context recognition for more accurate sentence and phrase translation.',
     },
     {
-      label: 'Elegant Design',
-      value: 'Elegant design that supports the aesthetics of the room.',
+      label: 'Noise Cancellation',
+      value:
+        'Dual-microphone noise cancellation for clear voice input in noisy environments.',
+    },
+    {
+      label: 'Display & Interaction',
+      value:
+        'Built-in 8-inch multi-touch display with gesture control for interactive use.',
+    },
+    {
+      label: 'Audio Compatibility',
+      value:
+        'Compatible with Bluetooth earpieces and USB-C headsets for private conversations.',
     },
   ];
 
@@ -45,11 +48,11 @@ export function InteractiveParameter() {
           {parameters.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col gap-1 px-4 py-4 text-sm transition-colors duration-200 sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
+              className={`flex flex-col gap-1 px-4 py-4 text-sm sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
                 index % 2 === 0
                   ? 'bg-white/10 hover:bg-white/10'
                   : 'bg-white/5 hover:bg-white/20'
-              }`}
+              } transition-colors duration-200`}
             >
               <div className="w-full font-medium text-gray-300 sm:w-1/3 md:w-1/4">
                 {item.label}

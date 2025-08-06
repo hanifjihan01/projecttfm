@@ -221,7 +221,7 @@ export const heroData: HeroProps = {
       title: 'Motorized Conference LCD',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailmotorized',
       },
     },
     {
@@ -243,7 +243,7 @@ export const heroData: HeroProps = {
       title: 'Smart Projector',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartprojector',
       },
     },
     {
@@ -254,7 +254,7 @@ export const heroData: HeroProps = {
       title: 'Meeting TV Interactive -HZS-Y651ABBXC',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailmeetingtv',
       },
     },
     {
@@ -342,7 +342,7 @@ export const heroData: HeroProps = {
       title: 'Smart Translation MacinMVAI1011',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmarttranslation',
       },
     },
     {
@@ -606,7 +606,7 @@ export const heroData: HeroProps = {
       title: 'Smart Locker',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartlocker',
       },
     },
     {
@@ -617,7 +617,7 @@ export const heroData: HeroProps = {
       title: 'Smart Vending Machine',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartvending',
       },
     },
     {
@@ -628,7 +628,7 @@ export const heroData: HeroProps = {
       title: 'M Kios',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailmkios',
       },
     },
     {
@@ -636,10 +636,10 @@ export const heroData: HeroProps = {
         src: '/assets/images/project/layarinteractivelcd.png',
         alt: 'hero 4',
       },
-      title: 'Layar Interactive LCD',
+      title: 'Interactive LCD Screen',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detaillayarinteractivelcd',
       },
     },
     {
@@ -650,7 +650,7 @@ export const heroData: HeroProps = {
       title: 'LCD Standing (Digital Signage)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detaillcdstanding',
       },
     },
     {

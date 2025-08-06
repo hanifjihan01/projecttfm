@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -10,11 +9,6 @@ const tabs = [
   { label: 'Visitor Management System', value: 'visitor' },
   { label: 'Smart Security', value: 'security' },
 ];
-
-const images: Record<string, string> = {
-  visitor: '/assets/images/hero/ss.png',
-  security: '/assets/images/hero/ss.png',
-};
 
 export function HeroSectionsss() {
   const [activeTab, setActiveTab] = useState('security');
@@ -42,9 +36,10 @@ export function HeroSectionsss() {
 
         {/* Subjudul */}
         <p className="mt-3 text-xs text-white md:text-base">
-          Advanced Smart Technology for Total Protection.
+          Advanced Smart Technology for Total Protection and Protecting What
+          Matters Most
           <br className="hidden sm:block" />
-          Protecting What Matters Most with Intelligent Systems.
+          with Intelligent Systems.
         </p>
 
         {/* Tombol tab */}
@@ -65,20 +60,7 @@ export function HeroSectionsss() {
           ))}
         </div>
 
-        {/* Gambar (hanya tampil di desktop) */}
-        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-160px] md:flex">
-          <div className="relative aspect-[16/9] w-full max-w-7xl overflow-hidden rounded-2xl md:rounded-[1rem]">
-            <Image
-              src={images[activeTab]}
-              alt={
-                tabs.find((t) => t.value === activeTab)?.label || 'Hero Image'
-              }
-              fill
-              priority
-              className="object-contain"
-            />
-          </div>
-        </div>
+        {/* Bagian gambar telah dihapus */}
       </motion.div>
     </section>
   );

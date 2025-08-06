@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export function LcdStandingFeatures() {
   const features = [
-    'Tersedia dalam berbagai ukuran layar: 32, 43, 49, 55, 65, dan 75 inci, dengan aspek rasio 16:9 dan sudut pandang 89° dari semua arah.',
-    'Mendukung resolusi Full HD (1920x1080) dan 4K (3840x2160), dengan kecerahan 400 nits, kontras rasio 1000:1, dan waktu respons <6ms.',
-    'Menggunakan LED backlight dengan masa pakai hingga 100.000 jam.',
-    'Pilihan layar: non-touch, infrared touch, dan capacitive touch.',
+    'Available in various screen sizes: 32, 43, 49, 55, 65, and 75 inches, with a 16:9 aspect ratio and 89° viewing angle from all directions.',
+    'Supports Full HD (1920x1080) and 4K (3840x2160) resolutions, with 400 nits brightness, 1000:1 contrast ratio, and <6ms response time.',
+    'Uses LED backlight with a service life of up to 100,000 hours.',
+    'Screen Select: non-touch, infrared touch, dan capacitive touch.',
   ];
 
   return (

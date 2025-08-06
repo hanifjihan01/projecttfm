@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export function SmartLockerFeatures() {
   const features = [
-    'Dilengkapi modul transaksi cerdas untuk akses menggunakan QR code, pengenalan wajah, atau kata sandi.',
-    'Memberikan kemudahan, efisiensi, dan tingkat keamanan yang lebih tinggi dibandingkan loker tradisional.',
-    'Desain hemat ruang dan biaya operasional rendah, ideal untuk berbagai lokasi umum.',
-    'Sangat cocok untuk tempat wisata bagi wisatawan yang membawa barang berharga seperti ponsel dan koper.',
+    'Equipped with a smart transaction module for access using QR code, facial recognition, or password.',
+    'Providing convenience, efficiency, and a higher level of security than traditional lockers.',
+    'Space-saving design and low operating costs, ideal for a variety of public locations.',
+    'It is very suitable for tourist attractions for tourists who carry valuables such as cell phones and suitcases.',
   ];
 
   return (

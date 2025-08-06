@@ -3,18 +3,18 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export function InteractiveFeatures() {
+export function MeetingTvFeatures() {
   const features = [
-    '24-inch touchscreen for wide and comfortable viewing.',
-    'Runs the Android operating system for high flexibility and compatibility.',
-    'Providing a modern and responsive interactive experience.',
-    'Suitable for various needs such as self check-in or interactive information.',
-    'Elegant design that supports the aesthetics of the room.',
+    'A multifunctional presentation solution equipped with advanced touchscreen technology.',
+    'Features a large DLED panel (1428 x 804 mm) with 4K UHD resolution (3840 x 2160), 16:9 aspect ratio',
+    'Wide viewing angle of 178° horizontally and vertically for maximum visibility.',
+    'Supports 10-bit color depth with 16.7 million colors for vivid and sharp image quality.',
+    'Powered by H560 chipset with quad-core ARM A55 1.5GHz processor, 2/3GB RAM, and 16/32GB ROM, running on Android 9.0.',
   ];
 
   return (
     <section
-      id="face-features25"
+      id="face-features33"
       className="w-full bg-accent-900 px-4 py-10 sm:px-6 lg:px-24"
     >
       <div className="mx-auto max-w-screen-xl">
@@ -28,9 +28,9 @@ export function InteractiveFeatures() {
           </h3>
         </div>
 
-        {/* Gambar dan List */}
+        {/* Image and List */}
         <div className="flex flex-col items-center justify-center gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-start lg:pl-40">
-          {/* Gambar */}
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -39,21 +39,21 @@ export function InteractiveFeatures() {
             className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px]"
           >
             <Image
-              src="/assets/images/project/layarinteractivelcd.png"
-              alt="Interactive Display"
+              src="/assets/images/project/meetingtv.png"
+              alt="Meeting TV Display"
               width={260}
               height={200}
-              className="h-auto w-full rounded-lg object-contain shadow-md"
+              className="mt-6 h-auto w-full rounded-lg object-contain shadow-md"
             />
           </motion.div>
 
-          {/* List fitur */}
+          {/* Feature list */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="w-full px-2 text-base leading-relaxed text-gray-100 sm:text-lg lg:mt-7 lg:px-0"
+            className="w-full px-2 text-base leading-relaxed text-gray-100 sm:text-lg lg:mt-2 lg:px-0"
           >
             <ul className="list-none space-y-5 lg:text-[16px]">
               {features.map((text, i) => (

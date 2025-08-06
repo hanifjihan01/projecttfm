@@ -2,29 +2,51 @@
 
 import { motion } from 'framer-motion';
 
-export function InteractiveParameter() {
+export function MotorizedParameter() {
   const parameters = [
     {
-      label: '24 Inch Touchscreen',
-      value: '24-inch touchscreen for wide and comfortable viewing.',
+      label: 'Panel Size',
+      value: '558mm x 88mm x 5mm',
     },
     {
-      label: 'Android Operating System',
-      value:
-        'Runs the Android operating system for high flexibility and compatibility.',
+      label: 'Box Size',
+      value: '538mm x 75mm x 605mm',
     },
     {
-      label: 'Interactive Experience',
-      value: 'Providing a modern and responsive interactive experience.',
+      label: 'Image Sensor',
+      value: 'T31X + 4335',
     },
     {
-      label: 'Multifunctional',
-      value:
-        'Suitable for various needs such as self check-in or interactive information.',
+      label: 'Optical Zoom Lens',
+      value: '10X (4.7mm - 47mm)',
     },
     {
-      label: 'Elegant Design',
-      value: 'Elegant design that supports the aesthetics of the room.',
+      label: 'Wide-Angle View',
+      value: 'D: 67.6°, H: 64.8°, V: 41.2°',
+    },
+    {
+      label: 'Telephoto View',
+      value: 'D: 7.15°, H: 5.8°, V: 4.38°',
+    },
+    {
+      label: 'Video Output',
+      value: 'USB2.0',
+    },
+    {
+      label: 'Power Supply',
+      value: 'DC12V (2A) adapter',
+    },
+    {
+      label: 'Pan & Tilt Range',
+      value: 'Pan: 0-355°, Tilt: -30° to +90°',
+    },
+    {
+      label: 'Zoom & Focus',
+      value: 'Auto-adjust at appropriate speeds',
+    },
+    {
+      label: 'Camera Resolution',
+      value: 'Effective up to 4.0 Megapixels',
     },
   ];
 
@@ -45,11 +67,11 @@ export function InteractiveParameter() {
           {parameters.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col gap-1 px-4 py-4 text-sm transition-colors duration-200 sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
+              className={`flex flex-col gap-1 px-4 py-4 text-sm sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
                 index % 2 === 0
                   ? 'bg-white/10 hover:bg-white/10'
                   : 'bg-white/5 hover:bg-white/20'
-              }`}
+              } transition-colors duration-200`}
             >
               <div className="w-full font-medium text-gray-300 sm:w-1/3 md:w-1/4">
                 {item.label}

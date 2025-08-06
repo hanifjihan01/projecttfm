@@ -5,54 +5,53 @@ import { motion } from 'framer-motion';
 export function SmartVendingParameter() {
   const parameters = [
     {
-      label: 'Modul pintar',
+      label: 'Smart Module',
       value:
-        'Inovasi dari mesin vending tradisional dengan modul pintar untuk efisiensi dan kemudahan operasional.',
+        'Innovation of traditional vending machines with smart modules for efficiency and ease of operation.',
     },
     {
-      label: 'Pembayaran & layar',
-      value:
-        'Dilengkapi sistem pembayaran cepat dan layar sentuh berukuran besar.',
+      label: 'Payment & touch screen',
+      value: 'Equipped with a fast payment system and a large touch screen.',
     },
     {
-      label: 'Keamanan & manajemen',
+      label: 'Security & management',
       value:
-        'Memiliki alarm anti-pencurian dan sistem manajemen cerdas untuk pemantauan jarak jauh.',
+        'It has anti-theft alarm and intelligent management system for remote monitoring.',
     },
     {
-      label: 'Desain',
+      label: 'Design modern',
       value:
-        'Desain modern dengan jendela kaca besar untuk tampilan produk yang menarik dan jelas.',
+        'Modern design with large glass windows for an attractive and clear product display.',
     },
     {
-      label: 'Lokasi ideal',
+      label: 'Strategic location',
       value:
-        'Ideal ditempatkan di lokasi strategis seperti pusat informasi wisata, ruang publik, dan lobi hotel.',
+        'Ideally placed in strategic locations such as tourist information centers, public spaces, and hotel lobbies.',
     },
     {
-      label: 'Efisiensi operasional',
+      label: 'Operational efficiency',
       value:
-        'Menghemat biaya operasional karena dapat beroperasi tanpa pengawasan staf.',
+        'Saves operational costs because it can operate without staff supervision.',
     },
     {
-      label: 'Jalur pengeluaran',
+      label: 'Output path',
       value:
-        'Mendukung berbagai jalur pengeluaran barang: sistem pegas, rantai, dan sabuk berjalan.',
+        'Supports various output paths: spring, chain and belt conveyor systems.',
     },
     {
-      label: 'Jenis produk',
+      label: 'Types of products',
       value:
-        'Dapat menjual berbagai jenis produk seperti minuman kaleng, makanan segar, dan camilan.',
+        'Can sell various types of products such as canned drinks, fresh food, and snacks.',
     },
     {
-      label: 'Kaca anti-embun',
+      label: 'Anti-fog glass',
       value:
-        'Dilengkapi kaca tempered ganda dengan pemanas untuk mencegah embun atau es.',
+        'Equipped with double tempered glass with heating to prevent condensation or frost.',
     },
     {
-      label: 'Fitur tambahan',
+      label: 'Additional features',
       value:
-        'Pengingat suara, alarm pemantauan kesalahan, dan pelaporan otomatis jika terjadi kegagalan pengiriman barang.',
+        'Additional features: voice reminder, error monitoring alarm, and automatic reporting in case of failed delivery of goods.',
     },
   ];
 

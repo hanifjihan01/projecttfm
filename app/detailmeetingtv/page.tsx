@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerMeetingTv } from '@/src/components/banner/bannermeetingtv';
+import { MeetingTvFeatures } from '@/src/components/features/MeetingTvFeatures';
+import { MeetingTvParameter } from '@/src/components/parameters/MeetingTvParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { MeetingtvDetail } from '@/src/components/allproductsiot/meetingtvdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <MeetingtvDetail />
+      <div className="">
+        <BannerMeetingTv />
       </div>
+
+      <div className="">
+        <MeetingTvFeatures />
+      </div>
+      <div className="">
+        <MeetingTvParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

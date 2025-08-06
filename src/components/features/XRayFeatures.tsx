@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 export function XRayFeatures() {
   const features = [
-    'Sabuk konveyor berkecepatan 0,22 meter/detik dan mampu menahan beban hingga 170 kg.',
-    'Sudut pandang bawah dan samping, mampu menembus pelat baja setebal 40 mm.',
-    'Resolusi garis: Φ 0,0787 mm, resolusi penetrasi: Φ 0,202 mm.',
-    'Resolusi spasial horizontal dan vertikal: Φ 1,0 mm untuk kedua sudut pandang.',
-    'Ukuran saluran perangkat: 650 mm (L) x 500 mm (T), dosis pemeriksaan tunggal < 4 μGy.',
-    'Paparan radiasi di sekitar perangkat sangat rendah (< 0,2 μSv/jam), sesuai standar nasional dan internasional.',
+    'Conveyor belt speed of 0.22 meters/second, capable of supporting loads up to 170 kg.',
+    'Bottom and side viewing angles, capable of penetrating steel plates up to 40 mm thick.',
+    'Line resolution: Φ 0.0787 mm, penetration resolution: Φ 0.202 mm.',
+    'Horizontal and vertical spatial resolution: Φ 1.0 mm for both viewing angles.',
+    'Device channel size: 650 mm (W) x 500 mm (H), single inspection dose < 4 μGy.',
+    'Radiation exposure around the device is very low (< 0.2 μSv/hour), meeting national and international standards.',
   ];
 
   return (
@@ -29,9 +29,9 @@ export function XRayFeatures() {
           </h3>
         </div>
 
-        {/* Gambar dan List */}
+        {/* Image and List */}
         <div className="flex flex-col items-center justify-center gap-10 sm:gap-12 lg:flex-row lg:items-start lg:justify-start lg:pl-40">
-          {/* Gambar */}
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -48,7 +48,7 @@ export function XRayFeatures() {
             />
           </motion.div>
 
-          {/* List fitur */}
+          {/* Feature list */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

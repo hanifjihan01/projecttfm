@@ -101,7 +101,7 @@ export function Hero() {
                 href={activeItem?.button.href}
                 className="mt-2 inline-block rounded bg-[#4AC4F6] px-3 py-1.5 text-xs text-white transition-colors duration-300 hover:bg-[#007bbd] md:text-sm"
               >
-                Telusuri
+                Explore
               </CustomLink>
             </motion.div>
 

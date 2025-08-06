@@ -2,10 +2,11 @@ import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 
 import { Metadata } from 'next';
+import { BannerMotorized } from '@/src/components/banner/bannermotorized';
+import { MotorizedFeatures } from '@/src/components/features/MotorizedFeatures';
+import { MotorizedParameter } from '@/src/components/parameters/MotorizedParameter';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { MotorizedDetail } from '@/src/components/allproductsiot/motorizeddetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <MotorizedDetail />
+      <div className="">
+        <BannerMotorized />
       </div>
+      <div className="">
+        <MotorizedFeatures />
+      </div>
+      <div className="">
+        <MotorizedParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

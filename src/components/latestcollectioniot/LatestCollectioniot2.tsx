@@ -60,7 +60,7 @@ export function LatestCollectioniot2() {
         link: '/detailmkios',
       },
       {
-        name: 'Layar Interactive LCD',
+        name: 'Interactive LCD Screen',
         image: '/assets/images/project/layarinteractivelcd.png',
         link: '/detaillayarinteractivelcd',
       },
@@ -114,7 +114,8 @@ export function LatestCollectioniot2() {
         <div className="flex flex-col gap-8 md:flex-row">
           {/* Sidebar */}
           <aside className="h-fit w-full rounded-xl border border-white/20 bg-white/5 p-4 backdrop-blur-sm md:w-64">
-            <h3 className="mb-4 text-lg font-semibold">Kategori Produk</h3>
+            <h3 className="mb-4 text-lg font-semibold">Product Category</h3>
+            <h3 className="mb-4 text-lg font-semibold"></h3>
             <div className="space-y-2">
               {Object.keys(productData).map((category) => {
                 const isSelected = selectedCategory === category;
@@ -186,7 +187,7 @@ export function LatestCollectioniot2() {
                 className="text-sm text-sky-400 underline hover:text-sky-300"
                 onClick={() => setShowAll((prev) => !prev)}
               >
-                {showAll ? 'Tampilkan Per Halaman' : 'Lihat Semua'}
+                {showAll ? 'Show Per Page' : 'See All'}
               </button>
             </div>
 

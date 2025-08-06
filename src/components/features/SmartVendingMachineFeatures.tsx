@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 export function SmartVendingMachineFeatures() {
   const features = [
-    'Inovasi dari mesin vending tradisional dengan modul pintar untuk efisiensi dan kemudahan operasional.',
-    'Dilengkapi sistem pembayaran cepat dan layar sentuh berukuran besar.',
-    'Memiliki alarm anti-pencurian dan sistem manajemen cerdas untuk pemantauan jarak jauh.',
-    'Desain modern dengan jendela kaca besar untuk tampilan produk yang menarik dan jelas.',
-    'Ideal ditempatkan di lokasi strategis seperti pusat informasi wisata, ruang publik, dan lobi hotel.',
+    'Innovation of traditional vending machines with smart modules for efficiency and ease of operation.',
+    'Equipped with a fast payment system and a large touch screen.',
+    'It has anti-theft alarm and intelligent management system for remote monitoring.',
+    'Modern design with large glass windows for an attractive and clear product display.',
+    'Ideally placed in strategic locations such as tourist information centers, public spaces, and hotel lobbies.',
   ];
 
   return (

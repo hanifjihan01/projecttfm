@@ -5,34 +5,33 @@ import { motion } from 'framer-motion';
 export function SmartLockerParameter() {
   const parameters = [
     {
-      label: 'Modul transaksi cerdas',
-      value: 'QR code, pengenalan wajah, atau kata sandi',
+      label: 'Smart transaction module',
+      value: 'QR code, facial recognition, or password',
     },
     {
-      label: 'Sudut Pandang',
-      value: 'kemudahan, efisiensi, dan tingkat keamanan yang lebih tinggi',
+      label: 'Point of View',
+      value: 'convenience, efficiency, and higher levels of security',
     },
     {
-      label: 'penyimpanan',
+      label: 'Storage',
       value:
-        'aman saat aktivitas seperti panjat tebing atau bermain air tanpa perlu membawa ponsel',
+        'safe during activities such as rock climbing or playing in the water without having to carry a cell phone',
     },
     {
-      label: 'konsumsi sekunder',
-      value: 'stabil karena tingkat penggunaan yang tinggi',
+      label: 'Secondary consumption',
+      value: 'stable due to high usage levels',
     },
     {
-      label: 'Sistem identifikasi cerdas dan modul transaksi',
-      value: 'otomatis mengurangi kesalahan dan intervensi manual',
+      label: 'Intelligent identification system and transaction module',
+      value: 'automatically reduces errors and manual intervention',
     },
     {
-      label: 'Fleksibilitas metode akses',
-      value: 'pengenalan wajah, kata sandi pribadi, atau scan QR code',
+      label: 'Flexibility of access methods',
+      value: 'facial recognition, personal password, or QR code scan',
     },
     {
-      label: 'Sistem manajemen terpadu',
-      value:
-        'memungkinkan pemantauan status perangkat secara real-time dari jarak jauh',
+      label: 'Integrated management system',
+      value: 'allows real-time remote monitoring of device status',
     },
   ];
 

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
-export function BannerInteractiveLcd() {
+export function BannerSmartProjector() {
   const router = useRouter();
 
   return (
@@ -12,8 +12,8 @@ export function BannerInteractiveLcd() {
       <div className="relative w-full">
         {/* Banner image full width */}
         <Image
-          src="/assets/images/project/bannerinteractivelcd.png"
-          alt="Smart Locker"
+          src="/assets/images/project/bannerprojector.png"
+          alt="Face Recognition Banner"
           width={1920}
           height={350}
           layout="responsive"
@@ -35,7 +35,7 @@ export function BannerInteractiveLcd() {
             className="break-words text-[5vw] font-bold
                        leading-snug text-white sm:text-[4vw] md:text-[3.5vw] lg:text-[3.5vw]"
           >
-            Interactive LCD Screen
+            Smart Projector
           </motion.h1>
 
           <motion.button
@@ -43,9 +43,9 @@ export function BannerInteractiveLcd() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             onClick={() => {
-              router.push('/detaillayarinteractivelcd');
+              router.push('/detailsmartprojector');
               setTimeout(() => {
-                const section = document.getElementById('face-features25');
+                const section = document.getElementById('face-features32');
                 if (section) {
                   section.scrollIntoView({ behavior: 'smooth' });
                 }

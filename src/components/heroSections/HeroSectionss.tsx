@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -10,11 +9,6 @@ const tabs = [
   { label: 'Smart Office', value: 'visitor' },
   { label: 'Smart Commercial Facility', value: 'security' },
 ];
-
-const images: Record<string, string> = {
-  visitor: '/assets/images/hero/so1.png',
-  security: '/assets/images/hero/so1.png',
-};
 
 export function HeroSectionss() {
   const [activeTab, setActiveTab] = useState('visitor');
@@ -66,20 +60,7 @@ export function HeroSectionss() {
           ))}
         </div>
 
-        {/* Gambar (hanya tampil di desktop) */}
-        <div className="pointer-events-none relative z-0 mt-8 hidden justify-center md:mt-[-80px] md:flex">
-          <div className="relative aspect-[16/9] w-full max-w-7xl overflow-hidden rounded-2xl md:rounded-[1rem]">
-            <Image
-              src={images[activeTab]}
-              alt={
-                tabs.find((t) => t.value === activeTab)?.label || 'Hero Image'
-              }
-              fill
-              priority
-              className="object-contain"
-            />
-          </div>
-        </div>
+        {/* Gambar dihapus */}
       </motion.div>
     </section>
   );

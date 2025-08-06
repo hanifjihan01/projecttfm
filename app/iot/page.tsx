@@ -1,6 +1,7 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
+import { BannerIot } from '@/src/components/banner/banneriot';
 
 import { Iot } from '@/src/components/iot/Iot';
 import { HeroSectionss } from '@/src/components/heroSections/HeroSectionss';
@@ -18,8 +19,12 @@ export default function Page() {
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
+      <div className="relative z-10 md:mb-[0px]">
         <HeroSectionss />
+      </div>
+
+      <div className="">
+        <BannerIot />
       </div>
 
       <div className="relative z-20 ">
