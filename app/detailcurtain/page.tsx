@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerSmartSwitchCurtain } from '@/src/components/banner/bannersmartswitchcurtain';
+import { SmartSwitchCurtainFeatures } from '@/src/components/features/SmartSwitchCurtainFeatures';
+import { SmartSwitchCurtainParameter } from '@/src/components/parameters/SmartSwitchCurtainParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { CurtainDetail } from '@/src/components/allproductsiot/curtaindetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <CurtainDetail />
+      <div className="">
+        <BannerSmartSwitchCurtain />
       </div>
+      <div className="">
+        <SmartSwitchCurtainFeatures />
+      </div>
+      <div className="">
+        <SmartSwitchCurtainParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

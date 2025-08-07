@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerSmartTemprature } from '@/src/components/banner/bannersmarttemprature';
+import { SmartTemperatureFeatures } from '@/src/components/features/SmartTemperatureFeatures';
+import { SmartTemperatureParameter } from '@/src/components/parameters/SmartTempraturParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartTemperaturDetail } from '@/src/components/allproductsdetail/smarttemperaturdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartTemperaturDetail />
+      <div className="">
+        <BannerSmartTemprature />
       </div>
+      <div className="">
+        <SmartTemperatureFeatures />
+      </div>
+      <div className="">
+        <SmartTemperatureParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

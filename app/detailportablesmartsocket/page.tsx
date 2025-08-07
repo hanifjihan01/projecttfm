@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerPortableSmartSocket } from '@/src/components/banner/bannerportablesmartsocket';
 
 import { Metadata } from 'next';
+import { PortableSmartSocketFeatures } from '@/src/components/features/PortableSmartSocketFeatures';
+import { PortableSmartSocketParameter } from '@/src/components/parameters/PortableSmartSocket';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { PortableSmartDetail } from '@/src/components/allproductsiot/portablesmartsocket';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,21 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <PortableSmartDetail />
+      <div className="">
+        <BannerPortableSmartSocket />
       </div>
+
+      <div className="">
+        <PortableSmartSocketFeatures />
+      </div>
+      <div className="">
+        <PortableSmartSocketParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

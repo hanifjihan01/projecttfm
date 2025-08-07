@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerSmartSwitch } from '@/src/components/banner/bannersmartswitch';
+import { SmartSwitchFeatures } from '@/src/components/features/SmartSwitchFeatures';
+import { SmartSwitchParameter } from '@/src/components/parameters/SmartSwitchParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartSwitchDetail } from '@/src/components/allproductsiot/smartswitchdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,12 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartSwitchDetail />
+      <div className="">
+        <BannerSmartSwitch />
+      </div>
+      <div className="">
+        <SmartSwitchFeatures />
+      </div>
+
+      <div className="">
+        <SmartSwitchParameter />
       </div>
       <div className="mt-32">
         <Iot />

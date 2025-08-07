@@ -4,8 +4,9 @@ import { MainHeader } from '@/src/layout/header';
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartGasSensorDetail } from '@/src/components/allproductsiot/smartgassensordetail';
+import { BannerSmartGas } from '@/src/components/banner/bannersmartgas';
+import { SmartGasFeatures } from '@/src/components/features/SmartGasFeatures';
+import { SmartGasParameter } from '@/src/components/parameters/SmartGasParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartGasSensorDetail />
+      <div className="">
+        <BannerSmartGas />
       </div>
+      <div className="">
+        <SmartGasFeatures />
+      </div>
+      <div className="">
+        <SmartGasParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

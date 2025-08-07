@@ -375,7 +375,7 @@ export const heroData: HeroProps = {
       title: 'Smart Switch',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartswitch',
       },
     },
     {
@@ -386,7 +386,7 @@ export const heroData: HeroProps = {
       title: '3 In 1 Smart Switch',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartswitch3in1',
       },
     },
     {
@@ -397,7 +397,7 @@ export const heroData: HeroProps = {
       title: 'Smart switch Curtain',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcurtain',
       },
     },
     {
@@ -408,7 +408,7 @@ export const heroData: HeroProps = {
       title: 'Smart Socket',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartsocket',
       },
     },
     {
@@ -419,7 +419,7 @@ export const heroData: HeroProps = {
       title: 'Portable Smart Socket',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailportablesmartsocket',
       },
     },
     {
@@ -430,7 +430,7 @@ export const heroData: HeroProps = {
       title: 'Portable Smart Socket 2',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailportablesmartsocket2',
       },
     },
     {
@@ -441,7 +441,7 @@ export const heroData: HeroProps = {
       title: 'Portable Smart Socket 3',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailportablesmartsocket3',
       },
     },
     {
@@ -474,7 +474,7 @@ export const heroData: HeroProps = {
       title: 'Portable Smart Switch',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailportablesmartswitch',
       },
     },
     {
@@ -496,7 +496,7 @@ export const heroData: HeroProps = {
       title: 'Smart Door Magnetic Sensor',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailmagneticsensor',
       },
     },
     {
@@ -507,7 +507,7 @@ export const heroData: HeroProps = {
       title: 'Smart Smoke Sensor',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartsmokesensor',
       },
     },
     {
@@ -518,7 +518,7 @@ export const heroData: HeroProps = {
       title: 'Smart Gas Sensor',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartgassensor',
       },
     },
     {
@@ -529,7 +529,7 @@ export const heroData: HeroProps = {
       title: 'Smart Siren',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartsiren',
       },
     },
     {
@@ -540,7 +540,7 @@ export const heroData: HeroProps = {
       title: 'Smart Temperature & Humidity Sensor',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmarttemperatur',
       },
     },
     {
@@ -573,7 +573,7 @@ export const heroData: HeroProps = {
       title: 'Smart Motion Sensor',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartmotionsensor',
       },
     },
     {

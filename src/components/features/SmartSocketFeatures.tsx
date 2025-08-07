@@ -39,7 +39,7 @@ export function SmartSocketFeatures() {
             className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[260px]"
           >
             <Image
-              src="/assets/images/project/portablesmartsocket.png"
+              src="/assets/images/project/smartsocket.png"
               alt="Smart Socket"
               width={260}
               height={200}

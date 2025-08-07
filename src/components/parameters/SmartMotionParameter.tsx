@@ -1,0 +1,79 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+export function SmartMotionParameter() {
+  const parameters = [
+    {
+      label: 'Power Efficiency',
+      value:
+        'DynaMax motion sensor is a power-efficient device with up to 2 years of standby time and up to 3 years of battery life.',
+    },
+    {
+      label: 'Power Supply',
+      value:
+        'Operates on two AA batteries (DC 3V), ensuring convenient and reliable power supply.',
+    },
+    {
+      label: 'Motion Detection Range',
+      value:
+        'Capable of detecting human movement in real-time within a 6-meter range at 25ºC.',
+    },
+    {
+      label: 'Linkage Control',
+      value:
+        'Supports linkage control to operate other smart devices automatically based on motion detection.',
+    },
+    {
+      label: 'Current Consumption',
+      value:
+        'Extremely low current consumption: ≤ 15μA in standby mode and ≤ 15mA during active alarm.',
+    },
+    {
+      label: 'Power Indicator',
+      value:
+        'Equipped with an easily monitored power indicator for battery status tracking.',
+    },
+    {
+      label: 'Certification & Customization',
+      value:
+        'ISO certified and customizable based on specific user requirements.',
+    },
+  ];
+
+  return (
+    <section className="w-full bg-accent-900 px-4 py-10 sm:px-6 md:px-10 lg:px-24">
+      <div className="mx-auto w-full max-w-full md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1000px]">
+        <motion.h2
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className="mb-6 text-lg font-semibold text-white sm:text-xl md:text-2xl"
+        >
+          Parameters
+        </motion.h2>
+
+        <div className="overflow-hidden rounded-xl border border-white/10">
+          {parameters.map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-col gap-1 px-4 py-4 text-sm sm:flex-row sm:items-start sm:gap-4 sm:text-base ${
+                index % 2 === 0
+                  ? 'bg-white/10 hover:bg-white/10'
+                  : 'bg-white/5 hover:bg-white/20'
+              } transition-colors duration-200`}
+            >
+              <div className="w-full font-medium text-gray-300 sm:w-1/3 md:w-1/4">
+                {item.label}
+              </div>
+              <div className="w-full text-gray-100 sm:w-2/3 md:w-3/4">
+                {item.value}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

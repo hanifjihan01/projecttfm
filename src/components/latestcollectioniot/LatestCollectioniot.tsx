@@ -69,7 +69,7 @@ export function LatestCollectioniot() {
     Socket: [
       {
         name: 'Smart Socket',
-        image: '/assets/images/project/portablesmartsocket.png',
+        image: '/assets/images/project/smartsocket.png',
         link: '/detailsmartsocket',
       },
       {

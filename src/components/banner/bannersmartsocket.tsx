@@ -12,7 +12,7 @@ export function BannerSmartSocket() {
       <div className="relative w-full">
         {/* Banner image full width */}
         <Image
-          src="/assets/images/project/bannersmartsocket.png"
+          src="/assets/images/project/bannersmartsocket1.png"
           alt="Smart Locker"
           width={1920}
           height={350}

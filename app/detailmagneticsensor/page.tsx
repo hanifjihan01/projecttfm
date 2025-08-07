@@ -2,10 +2,11 @@ import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 
 import { Metadata } from 'next';
+import { BannerMagneticSensor } from '@/src/components/banner/bannermagneticsensor';
+import { MagneticSensorFeatures } from '@/src/components/features/MagneticSensorFeatures';
+import { MagneticSensorParameter } from '@/src/components/parameters/MagneticSensorParameter';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { MagneticSensorDetail } from '@/src/components/allproductsiot/magneticsensordetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <MagneticSensorDetail />
+      <div className="">
+        <BannerMagneticSensor />
       </div>
+      <div className="">
+        <MagneticSensorFeatures />
+      </div>
+      <div className="">
+        <MagneticSensorParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

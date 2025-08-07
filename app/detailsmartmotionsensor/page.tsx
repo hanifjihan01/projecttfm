@@ -1,11 +1,11 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerSmartMotion } from '@/src/components/banner/bannersmartmotion';
+import { SmartMotionFeatures } from '@/src/components/features/SmartMotionFeatures';
 import { Metadata } from 'next';
+import { SmartMotionParameter } from '@/src/components/parameters/SmartMotionParameter';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartMotionSensorDetail } from '@/src/components/allproductsiot/smartmotionsensor';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +15,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartMotionSensorDetail />
+      <div className="">
+        <BannerSmartMotion />
       </div>
+      <div className="">
+        <SmartMotionFeatures />
+      </div>
+      <div className="">
+        <SmartMotionParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

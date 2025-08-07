@@ -5,7 +5,10 @@ import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
 
-import { PortableSmartSwitchDetail } from '@/src/components/allproductsiot/portablesmartswitch';
+import { SmartSwitchPortableParameter } from '@/src/components/parameters/SmartSwitchPortableParameter';
+
+import { BannerSmartSwitchPortable } from '@/src/components/banner/bannerportablesmartswitch';
+import { SmartSwitchPortableFeatures } from '@/src/components/features/PortableSmartSwitchFeatures';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +18,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <PortableSmartSwitchDetail />
+      <div className="">
+        <BannerSmartSwitchPortable />
       </div>
+      <div className="">
+        <SmartSwitchPortableFeatures />
+      </div>
+      <div className="">
+        <SmartSwitchPortableParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>
