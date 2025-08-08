@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerLumenLaser } from '@/src/components/banner/bannerlumenlaser';
+import { LumenLaserFeatures } from '@/src/components/features/LumenLaserFeatures';
+import { LumenLaserParameter } from '@/src/components/parameters/LumenLaserParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { LumenLaserDetail } from '@/src/components/allproductsiot/lumenlaserdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <LumenLaserDetail />
+      <div className="">
+        <BannerLumenLaser />
       </div>
+      <div className="">
+        <LumenLaserFeatures />
+      </div>
+      <div className="">
+        <LumenLaserParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

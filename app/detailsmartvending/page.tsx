@@ -7,7 +7,6 @@ import { BannerSmartVending } from '@/src/components/banner/bannersmartvending';
 import { Iot2 } from '@/src/components/iot2/iot2';
 import { SmartVendingMachineFeatures } from '@/src/components/features/SmartVendingMachineFeatures';
 
-
 import { SmartVendingParameter } from '@/src/components/parameters/SmartVendingParameter';
 
 export const metadata: Metadata = {

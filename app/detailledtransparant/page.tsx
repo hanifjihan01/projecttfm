@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { LedTransparantFeatures } from '@/src/components/features/LedTransparantFeatures';
+import { LedTransparantParameter } from '@/src/components/parameters/LedTransparantParameter';
 
 import { Metadata } from 'next';
+import { BannerLedTransparant } from '@/src/components/banner/bannerledtransparant';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { LedTransparantDetail } from '@/src/components/allproductsiot/ledtransparant';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <LedTransparantDetail />
+      <div className="">
+        <BannerLedTransparant />
       </div>
+      <div className="">
+        <LedTransparantFeatures />
+      </div>
+      <div className="">
+        <LedTransparantParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

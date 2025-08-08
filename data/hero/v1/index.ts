@@ -232,7 +232,7 @@ export const heroData: HeroProps = {
       title: 'Wide Angle Conference',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailwide',
       },
     },
     {
@@ -265,7 +265,7 @@ export const heroData: HeroProps = {
       title: 'Nas Storage',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailnasstorage',
       },
     },
     {
@@ -276,7 +276,7 @@ export const heroData: HeroProps = {
       title: '9000 Lumen Laser Projector L1668FCF',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detaillumenlaser',
       },
     },
     {
@@ -287,7 +287,7 @@ export const heroData: HeroProps = {
       title: 'Condenser Microphone USB Professional Speakers Audio',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcondenser',
       },
     },
     {
@@ -298,7 +298,7 @@ export const heroData: HeroProps = {
       title: 'LED Outdoor p4',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailp4led',
       },
     },
     {
@@ -309,7 +309,7 @@ export const heroData: HeroProps = {
       title: 'LED Glass transparant',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailledtransparant',
       },
     },
     {
@@ -320,7 +320,7 @@ export const heroData: HeroProps = {
       title: 'Scanner RFID (VD-67S)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailscannerrfid',
       },
     },
     {
@@ -331,7 +331,7 @@ export const heroData: HeroProps = {
       title: 'POE ManagebleLS6100G-24P-4X-L3M',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailpoe',
       },
     },
     {
@@ -452,7 +452,7 @@ export const heroData: HeroProps = {
       title: 'Smart Gateway',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartgateway',
       },
     },
     {
@@ -463,7 +463,7 @@ export const heroData: HeroProps = {
       title: 'Smart Gateway 2',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartgateway2',
       },
     },
     {
@@ -584,7 +584,7 @@ export const heroData: HeroProps = {
       title: 'Smart Gateway gen 4 (908)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartgateway4',
       },
     },
     {
@@ -595,7 +595,7 @@ export const heroData: HeroProps = {
       title: 'Smart Gateway gen 3 (906)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartgateway3',
       },
     },
     {

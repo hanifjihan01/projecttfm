@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerWideAngle } from '@/src/components/banner/bannerwideangle';
+import { WideAngleFeatures } from '@/src/components/features/WideAngleFeatures';
+import { WideAngleParameter } from '@/src/components/parameters/WideAngleParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { WideAngleDetail } from '@/src/components/allproductsiot/wideangledetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <WideAngleDetail />
+      <div className=" ">
+        <BannerWideAngle />
       </div>
+      <div className=" ">
+        <WideAngleFeatures />
+      </div>
+      <div className=" ">
+        <WideAngleParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

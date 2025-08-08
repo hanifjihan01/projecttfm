@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerSmartGateway } from '@/src/components/banner/bannersmartgateway';
+import { SmartGatewayFeatures } from '@/src/components/features/SmartGatewayFeatures';
+import { SmartGatewayParameter } from '@/src/components/parameters/SmartGatewayParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartGatewayDetail } from '@/src/components/allproductsiot/smartgatewaydetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartGatewayDetail />
+      <div className="">
+        <BannerSmartGateway />
       </div>
+      <div className="">
+        <SmartGatewayFeatures />
+      </div>
+      <div className="">
+        <SmartGatewayParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>
