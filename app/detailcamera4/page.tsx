@@ -1,11 +1,10 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerSmartCamera4 } from '@/src/components/banner/bannersmartcamera4';
 import { Metadata } from 'next';
-
+import { SmartCamera4Features } from '@/src/components/features/SmartCamera4Features';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-
-import { Camera4Detail } from '@/src/components/allproductsdetail/camera4detail';
+import { SmartCamera4Parameter } from '@/src/components/parameters/SmartCamera4Parameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +14,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <Camera4Detail />
+      <div className="">
+        <BannerSmartCamera4 />
       </div>
+      <div className="">
+        <SmartCamera4Features />
+      </div>
+      <div className="">
+        <SmartCamera4Parameter />
+      </div>
+
       <div className="mt-32">
         <ArtificialIntelligent />
       </div>

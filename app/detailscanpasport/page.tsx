@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerScanPasport } from '@/src/components/banner/bannerscanpasport';
 
 import { Metadata } from 'next';
+import { ScanPasportFeatures } from '@/src/components/features/ScanPasportFeatures';
+import { ScanPasportParameter } from '@/src/components/parameters/ScanPasportParameter';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { ScanPasportDetail } from '@/src/components/allproductsiot/scanpasportdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <ScanPasportDetail />
+      <div className="">
+        <BannerScanPasport />
       </div>
+      <div className="">
+        <ScanPasportFeatures />
+      </div>
+      <div className="">
+        <ScanPasportParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

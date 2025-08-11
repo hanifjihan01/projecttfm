@@ -1,11 +1,12 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
+import { BannerSmartDoorlock } from '@/src/components/banner/bannersmartdoorlock';
+import { SmartDoorlockFeatures } from '@/src/components/features/SmartDoorlockFeatures';
+import { SmartDoorlockParameter } from '@/src/components/parameters/SmartDoorlockParameter';
 
 import { Metadata } from 'next';
 
 import { Iot } from '@/src/components/iot/Iot';
-
-import { SmartDoorLockDetail } from '@/src/components/allproductsiot/smartdoorlockdetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +16,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartDoorLockDetail />
+      <div className="">
+        <BannerSmartDoorlock />
       </div>
+      <div className="">
+        <SmartDoorlockFeatures />
+      </div>
+      <div className="">
+        <SmartDoorlockParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

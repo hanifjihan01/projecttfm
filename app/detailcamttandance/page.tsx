@@ -1,11 +1,10 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerCamAttandance } from '@/src/components/banner/bannercamattandance';
 import { Metadata } from 'next';
-
+import { CamAttandanceFeatures } from '@/src/components/features/CamAttandanceFeatures';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-
-import { CamattandanceDetail } from '@/src/components/allproductsdetail/camattandance';
+import { CamAttandanceParameter } from '@/src/components/parameters/CamAttandanceParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +14,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
 
-      <div className="relative z-10 md:mb-[-180px]">
-        <CamattandanceDetail />
+      <div className="">
+        <BannerCamAttandance />
       </div>
+      <div className="">
+        <CamAttandanceFeatures />
+      </div>
+      <div className="">
+        <CamAttandanceParameter />
+      </div>
+
       <div className="mt-32">
         <ArtificialIntelligent />
       </div>

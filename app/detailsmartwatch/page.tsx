@@ -1,11 +1,10 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerSmartWatch } from '@/src/components/banner/bannersmartwatch';
 import { Metadata } from 'next';
-
+import { SmartWatchFeatures } from '@/src/components/features/SmartWatchFeatures';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-
-import { SmartWatchDetail } from '@/src/components/allproductsdetail/smartwatchdetail';
+import { SmartWatchParameter } from '@/src/components/parameters/SmartWatchParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +14,20 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <SmartWatchDetail />
+      <div className="">
+        <BannerSmartWatch />
       </div>
+
+      <div className="">
+        <SmartWatchFeatures />
+      </div>
+      <div className="">
+        <SmartWatchParameter />
+      </div>
+
       <div className="mt-32">
         <ArtificialIntelligent />
       </div>

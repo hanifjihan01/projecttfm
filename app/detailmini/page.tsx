@@ -1,11 +1,10 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerMini } from '@/src/components/banner/bannermini';
 import { Metadata } from 'next';
-
+import { MiniFeatures } from '@/src/components/features/MiniFeatures';
+import { MiniParameter } from '@/src/components/parameters/MiniParameter';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-
-import { MiniDetail } from '@/src/components/allproductsdetail/minidetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +14,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <MiniDetail />
+      <div className="">
+        <BannerMini />
       </div>
+      <div className="">
+        <MiniFeatures />
+      </div>
+      <div className="">
+        <MiniParameter />
+      </div>
+
       <div className="mt-32">
         <ArtificialIntelligent />
       </div>

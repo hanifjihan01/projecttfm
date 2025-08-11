@@ -215,7 +215,7 @@ export function LatestCollectioniot() {
       {
         name: 'Scan pasport (TD13)',
         image: '/assets/images/project/scanpasport.png',
-        link: '/detailcardreader',
+        link: '/detailscanpasport',
       },
       {
         name: 'Smart Doorlock',

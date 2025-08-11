@@ -1,11 +1,11 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerRfid } from '@/src/components/banner/bannerrfid';
 import { Metadata } from 'next';
-
+import { RfidFeatures } from '@/src/components/features/RfidFeatures';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
 
-import { RfidDetail } from '@/src/components/allproductsdetail/rfiddetail';
+import { RfidParameter } from '@/src/components/parameters/RfidParameter';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -15,13 +15,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <RfidDetail />
+      <div className="">
+        <BannerRfid />
       </div>
+      <div className="">
+        <RfidFeatures />
+      </div>
+      <div className="">
+        <RfidParameter />
+      </div>
+
       <div className="mt-32">
         <ArtificialIntelligent />
       </div>

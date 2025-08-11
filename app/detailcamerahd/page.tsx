@@ -1,10 +1,11 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-
+import { BannerHdIpCamera } from '@/src/components/banner/bannerhdipcamera';
+import { CameraHdFeatures } from '@/src/components/features/CameraHdFeatures';
 import { Metadata } from 'next';
+import { CameraHdParameter } from '@/src/components/parameters/CameraHdParameter';
 
 import { Iot } from '@/src/components/iot/Iot';
-import { IpCameraHdDetail } from '@/src/components/allproductsiot/camerahddetail';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -14,13 +15,19 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="mb-16 ">
+      <div className="mb-36 ">
         <MainHeader version="1" />
       </div>
-
-      <div className="relative z-10 md:mb-[-180px]">
-        <IpCameraHdDetail />
+      <div className="">
+        <BannerHdIpCamera />
       </div>
+      <div className="">
+        <CameraHdFeatures />
+      </div>
+      <div className="">
+        <CameraHdParameter />
+      </div>
+
       <div className="mt-32">
         <Iot />
       </div>

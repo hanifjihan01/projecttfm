@@ -45,7 +45,7 @@ export const heroData: HeroProps = {
       title: 'SMART HELMET',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmarthelmet',
       },
     },
     {
@@ -89,7 +89,7 @@ export const heroData: HeroProps = {
       title: 'Smart Camera AI 1S',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamera1',
       },
     },
     {
@@ -100,7 +100,7 @@ export const heroData: HeroProps = {
       title: 'Smart AI Camera Alloy 1S Social Distance',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamera2',
       },
     },
     {
@@ -111,7 +111,7 @@ export const heroData: HeroProps = {
       title: 'Smart AI Camera 1 Alloy',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamera3',
       },
     },
     {
@@ -133,7 +133,7 @@ export const heroData: HeroProps = {
       title: 'Kamera Outdoor JVS-BS10-5WPL-F0S',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailkameraoutdoor',
       },
     },
     {
@@ -144,7 +144,7 @@ export const heroData: HeroProps = {
       title: 'Smart Watch',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartwatch',
       },
     },
     {
@@ -155,7 +155,7 @@ export const heroData: HeroProps = {
       title: 'Kamera JVS-N819-ZDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamerajvszdl',
       },
     },
     {
@@ -166,7 +166,7 @@ export const heroData: HeroProps = {
       title: 'Intelligent Lock Tracker (Maxvision JT701)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detaillocktracker',
       },
     },
     {
@@ -177,7 +177,7 @@ export const heroData: HeroProps = {
       title: 'Cam face Attandance(JVS-FRT-T5)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamttandance',
       },
     },
     {
@@ -188,7 +188,7 @@ export const heroData: HeroProps = {
       title: 'Palm vein MVNT-8680-A107 ',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailpalmvein',
       },
     },
     {
@@ -199,7 +199,7 @@ export const heroData: HeroProps = {
       title: 'Tab 8"Allocube iplay 50 mini li',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailmini',
       },
     },
     {
@@ -210,7 +210,7 @@ export const heroData: HeroProps = {
       title: 'Bath RFID (VH88PRO)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailrfid',
       },
     },
     {
@@ -353,7 +353,7 @@ export const heroData: HeroProps = {
       title: 'Card reader (MCR200)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcardreader',
       },
     },
     {
@@ -364,7 +364,7 @@ export const heroData: HeroProps = {
       title: 'Scan pasport (TD13)',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailscanpasport',
       },
     },
     {
@@ -485,7 +485,7 @@ export const heroData: HeroProps = {
       title: 'Smart Doorlock',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailsmartdoorlock',
       },
     },
     {
@@ -551,7 +551,7 @@ export const heroData: HeroProps = {
       title: 'HD IP Camera',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamerahd',
       },
     },
     {
@@ -562,7 +562,7 @@ export const heroData: HeroProps = {
       title: 'IR Repeater',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailirrepreater',
       },
     },
     {
@@ -804,7 +804,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N537-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcamera4',
       },
     },
     {
