@@ -1,11 +1,11 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-import { BannerCleverDog } from '@/src/components/banner/bannercleverdog';
 import { Metadata } from 'next';
-import { CleverDogFeatures } from '@/src/components/features/CleverDogFeatures';
-import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-import { CleverDogParameter } from '@/src/components/parameters/CleverDogParameter';
 
+import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
+import { Jvsn916KdlParameter } from '@/src/components/parameters/Jvsn916KdlParameter';
+import { Jvsn916KdlFeatures } from '@/src/components/features/Jvsn916KdlFeatures';
+import { Banner916Kdl } from '@/src/components/banner/banner916kdl';
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
   description: 'Transforme - IT Solutions and Services React Nextjs Template',
@@ -18,13 +18,13 @@ export default function Page() {
         <MainHeader version="1" />
       </div>
       <div className="">
-        <BannerCleverDog />
+        <Banner916Kdl />
       </div>
       <div className="">
-        <CleverDogFeatures />
+        <Jvsn916KdlFeatures />
       </div>
       <div className="">
-        <CleverDogParameter />
+        <Jvsn916KdlParameter />
       </div>
 
       <div className="mt-32">

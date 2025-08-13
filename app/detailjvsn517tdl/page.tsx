@@ -1,10 +1,10 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-import { BannerCleverDog } from '@/src/components/banner/bannercleverdog';
 import { Metadata } from 'next';
-import { CleverDogFeatures } from '@/src/components/features/CleverDogFeatures';
 import { ArtificialIntelligent } from '@/src/components/artificialIntelligent/ArtificialIntelligent';
-import { CleverDogParameter } from '@/src/components/parameters/CleverDogParameter';
+import { Jvsn517TdlParameter } from '@/src/components/parameters/Jvsn517TdlParameter';
+import { Banner517Tdl } from '@/src/components/banner/banner517tdl';
+import { Jvsn517TdlFeatures } from '@/src/components/features/Jvsn517TdlFeatures';
 
 export const metadata: Metadata = {
   title: 'Transforme Indonesia',
@@ -18,13 +18,13 @@ export default function Page() {
         <MainHeader version="1" />
       </div>
       <div className="">
-        <BannerCleverDog />
+        <Banner517Tdl />
       </div>
       <div className="">
-        <CleverDogFeatures />
+        <Jvsn517TdlFeatures />
       </div>
       <div className="">
-        <CleverDogParameter />
+        <Jvsn517TdlParameter />
       </div>
 
       <div className="mt-32">

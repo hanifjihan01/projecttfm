@@ -122,7 +122,7 @@ export const heroData: HeroProps = {
       title: 'Clever Dog',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailcleverdog',
       },
     },
     {
@@ -716,7 +716,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N916-MDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn916mdl',
       },
     },
     {
@@ -727,7 +727,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N516-MDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn516mdl',
       },
     },
     {
@@ -738,7 +738,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N917-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn917sdl',
       },
     },
     {
@@ -749,7 +749,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N517-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn517sdl',
       },
     },
     {
@@ -760,7 +760,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N917-TDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn917tdl',
       },
     },
     {
@@ -771,7 +771,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N517-TDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn517tdl',
       },
     },
     {
@@ -782,7 +782,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N917-YDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn917ydl',
       },
     },
     {
@@ -793,7 +793,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N937-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn937sdl',
       },
     },
     {
