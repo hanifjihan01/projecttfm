@@ -804,7 +804,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N537-SDL',
       button: {
         label: 'Discover More',
-        href: '/detailcamera4',
+        href: '/detailjvsn537sdl',
       },
     },
     {
@@ -815,7 +815,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N617-UDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn617udl',
       },
     },
     {
@@ -826,7 +826,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N637-UDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn637udl',
       },
     },
     {
@@ -837,7 +837,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N510-DS',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn510ds',
       },
     },
     {
@@ -848,7 +848,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N955-HY',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn955hy',
       },
     },
     {
@@ -859,7 +859,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N5022',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn5022',
       },
     },
     {
@@ -870,7 +870,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N510-YWS',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn510yws',
       },
     },
     {
@@ -881,7 +881,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N4232-SL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn4232sl',
       },
     },
     {
@@ -892,7 +892,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N4242',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn4242',
       },
     },
     {
@@ -903,7 +903,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N915-ADL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn915adl',
       },
     },
     {
@@ -914,7 +914,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N935-ADL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn935adl',
       },
     },
     {
@@ -925,7 +925,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N533-DS-Z5',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detaildsz5',
       },
     },
     {
@@ -936,7 +936,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N410K-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn410ksdl',
       },
     },
     {
@@ -947,7 +947,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N430K-SDL',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn430ksdl',
       },
     },
     {
@@ -958,7 +958,7 @@ export const heroData: HeroProps = {
       title: 'JVS-FR3022',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsfr3022',
       },
     },
     {
@@ -969,7 +969,7 @@ export const heroData: HeroProps = {
       title: 'JVS-N83-Z25',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '/detailjvsn83z25',
       },
     },
     {
