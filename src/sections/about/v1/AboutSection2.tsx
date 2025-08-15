@@ -23,7 +23,7 @@ export function AboutSection2() {
   const { images, sectionHeading, description, subtitle2 } = aboutSectionData2;
 
   return (
-    <section className="section-padding-primary overflow-hidden">
+    <section id="about-us" className="section-padding-primary overflow-hidden">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
           {/* Content */}

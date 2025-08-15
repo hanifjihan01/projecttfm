@@ -28,6 +28,10 @@ export default function Page() {
       <div className="">
         <HeroBaru />
       </div>
+      <ServiceSection
+        className="relative z-10  !pb-0 !pt-0"
+        {...serviceSectionData}
+      />
 
       <Hero />
       <div className="relative">
@@ -40,8 +44,6 @@ export default function Page() {
           <StatisticsSection />
         </div>
       </div>
-
-      <ServiceSection className="!pb-0" {...serviceSectionData} />
 
       <AboutSection2 />
       <TestimonialSection />

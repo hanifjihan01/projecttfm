@@ -29,13 +29,13 @@ export function ServiceSection({ services, className }: ServiceSectionProps) {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <h2 className="font-secondary text-lg font-semibold uppercase leading-tight text-white md:text-xl lg:text-2xl">
+          {/* <h2 className="font-secondary text-lg font-semibold uppercase leading-tight text-white md:text-xl lg:text-2xl">
             Our Approach
-          </h2>
-          <p className="text-sm md:text-base lg:text-lg ">
+          </h2> */}
+          {/* <p className="text-sm md:text-base lg:text-lg ">
             We integrate smart systems and data-driven solutions to transform
             your digital experience.
-          </p>
+          </p> */}
         </div>
 
         {/* Service Cards */}

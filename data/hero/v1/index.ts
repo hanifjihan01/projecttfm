@@ -50,7 +50,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/kt5.png',
+        src: '/assets/images/project/smartphone.png',
         alt: 'hero 4',
       },
       title: 'Face Recognation Termal MVNT-86',
@@ -61,7 +61,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/plank.png',
+        src: '/assets/images/project/plankpintu.png',
         alt: 'hero 4',
       },
       title: 'Integrated Boom Gate With Smart AI Camera',
@@ -72,7 +72,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/autogatedual.png',
+        src: '/assets/images/project/autodualgate.png',
         alt: 'hero 4',
       },
       title: 'Autogate Dual',
@@ -83,7 +83,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/smartcamera.png',
+        src: '/assets/images/project/cameragajebo.png',
         alt: 'hero 4',
       },
       title: 'Smart Camera AI 1S',
@@ -94,7 +94,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/camera2.png',
+        src: '/assets/images/project/cameragajebo2.png',
         alt: 'hero 4',
       },
       title: 'Smart AI Camera Alloy 1S Social Distance',
@@ -105,7 +105,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/camera3.png',
+        src: '/assets/images/project/cameragajebo3.png',
         alt: 'hero 4',
       },
       title: 'Smart AI Camera 1 Alloy',
@@ -127,7 +127,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/kameraoutdor.png',
+        src: '/assets/images/project/kameraoutdoorbaru.png',
         alt: 'hero 4',
       },
       title: 'Kamera Outdoor JVS-BS10-5WPL-F0S',
@@ -138,7 +138,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/smartwatch.png',
+        src: '/assets/images/project/smartwatchbaru1.png',
         alt: 'hero 4',
       },
       title: 'Smart Watch',
@@ -149,7 +149,7 @@ export const heroData: HeroProps = {
     },
     {
       image: {
-        src: '/assets/images/project/kamerajvszdl.png',
+        src: '/assets/images/project/kamerakren.png',
         alt: 'hero 4',
       },
       title: 'Kamera JVS-N819-ZDL',
